@@ -61,12 +61,12 @@ function Navbar() {
   return (
     <NavbarContainer>
       <NameSection>
-        <Link to="profile" smooth={true} duration={500}>
+        <Link to="introduce" smooth={true} duration={500}>
           <Logo src={DaraDara} alt="DaraDara Logo" />
         </Link>
 
         <MyName>
-          <Link to="profile" smooth={true} duration={500}>
+          <Link to="introduce" smooth={true} duration={500}>
             RyuJiye
           </Link>
         </MyName>
