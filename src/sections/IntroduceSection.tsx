@@ -21,43 +21,42 @@ const TitleContext = styled.div`
   &::after {
     content: '';
     display: block;
-    width: 50%;
+    width: 40%;
     height: 4px; 
     background-color: #FF4500; 
-    margin: 20px auto 0;
+    margin: 10px auto 0;
   }
 `;
 
 const TitleText = styled.div`
-  font-size: 54px;
-  padding: 15px 0px;
+  font-size: 34px;
+  padding: 12px 0px;
   font-family: Pretendard6;
   color: #333;
 `;
 
 const TitleNameText = styled.div`
-  font-size: 68px;
+  font-size: 38px;
   font-family: Pretendard9;
 `;
 
 const DescriptionContainer = styled.div`
-  margin-top: 20px;
   font-family: Pretendard2;
-  font-size: 24px;
+  font-size: 20px;
   color: #333;
   max-width: 60%;
   text-align: center;
 `;
 
 const DescriptionText = styled.div`
-  margin-top: 12px;
+  margin-top: 10px;
 `;
 
 const MoreButton = styled.img`
-  margin-top: 30px;
+  margin-top: 20px;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 
   &:hover {
     opacity: 0.8;

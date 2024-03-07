@@ -7,7 +7,7 @@ const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   background-color: #FFCF51;
-  padding: 20px;
+  padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,23 +19,23 @@ const NameSection = styled.div`
   flex-grow: 1;
   display: flex;
   align-items: center;
-  margin-left: 12rem;
+  margin-left: 10rem;
 `;
 
 const Logo = styled.img`
-  height: 45px;
+  height: 35px;
   margin-right: 10px;
 `;
 
 const MyName = styled.div`
   margin-left: 10px;
-  font-size: 32px;
+  font-size: 24px;
   font-family: Pretendard6;
 `;
 
 const NavItems = styled.div`
   display: flex;
-  margin-right: 12rem;
+  margin-right: 10rem;
 `;
 
 interface NavItemProps {
@@ -43,8 +43,8 @@ interface NavItemProps {
 }
 
 const NavItem = styled.div<NavItemProps>`
-  margin-left: 30px;
-  font-size: 24px;
+  margin-left: 10px;
+  font-size: 20px;
   font-family: Pretendard6;
   cursor: pointer;
   padding: 10px 15px;
@@ -52,7 +52,7 @@ const NavItem = styled.div<NavItemProps>`
 
   &:hover {
     color: ${props => props.hoverColor || "transparent"};
-    font-size: 30px;
+    font-size: 24px;
     padding: 3px 20px;
   }
 `;

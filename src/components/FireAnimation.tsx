@@ -27,9 +27,9 @@ const rise = keyframes`
 `;
 
 const Fire = styled.div`
-  font-size: 24px;
+  font-size: 22px;
   filter: blur(${blur});
-  margin: 3em auto 0 auto;
+  margin: 2em auto 0 auto;
   position: relative;
   width: 10em;
   height: 12em;
