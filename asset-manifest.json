@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/profile/static/css/main.f9e1f3ba.css",
-    "main.js": "/profile/static/js/main.38ab2732.js",
-    "static/js/453.d73b0aaa.chunk.js": "/profile/static/js/453.d73b0aaa.chunk.js",
-    "static/media/Pretendard-SemiBold.otf": "/profile/static/media/Pretendard-SemiBold.4b3283bc0e29a9c97c11.otf",
-    "static/media/Pretendard-Regular.otf": "/profile/static/media/Pretendard-Regular.57ca7a4b20797e3b9625.otf",
-    "static/media/Pretendard-Black.otf": "/profile/static/media/Pretendard-Black.ed4fa19a4df95cb6740b.otf",
-    "static/media/Pretendard-ExtraLight.otf": "/profile/static/media/Pretendard-ExtraLight.c1677723ce338097648f.otf",
-    "static/media/Pretendard-Thin.otf": "/profile/static/media/Pretendard-Thin.e45abc28d4828e92dd10.otf",
-    "static/media/DaraDara.png": "/profile/static/media/DaraDara.9af3db7895e7cbd6ab8e.png",
-    "index.html": "/profile/index.html",
-    "main.f9e1f3ba.css.map": "/profile/static/css/main.f9e1f3ba.css.map",
-    "main.38ab2732.js.map": "/profile/static/js/main.38ab2732.js.map",
-    "453.d73b0aaa.chunk.js.map": "/profile/static/js/453.d73b0aaa.chunk.js.map"
+    "main.css": "/DaraProfile/static/css/main.2173898d.css",
+    "main.js": "/DaraProfile/static/js/main.30106afe.js",
+    "static/js/453.d73b0aaa.chunk.js": "/DaraProfile/static/js/453.d73b0aaa.chunk.js",
+    "static/media/Pretendard-SemiBold.otf": "/DaraProfile/static/media/Pretendard-SemiBold.4b3283bc0e29a9c97c11.otf",
+    "static/media/Pretendard-Regular.otf": "/DaraProfile/static/media/Pretendard-Regular.57ca7a4b20797e3b9625.otf",
+    "static/media/Pretendard-Black.otf": "/DaraProfile/static/media/Pretendard-Black.ed4fa19a4df95cb6740b.otf",
+    "static/media/Pretendard-ExtraLight.otf": "/DaraProfile/static/media/Pretendard-ExtraLight.c1677723ce338097648f.otf",
+    "static/media/Pretendard-Thin.otf": "/DaraProfile/static/media/Pretendard-Thin.e45abc28d4828e92dd10.otf",
+    "static/media/DaraDara.png": "/DaraProfile/static/media/DaraDara.9af3db7895e7cbd6ab8e.png",
+    "index.html": "/DaraProfile/index.html",
+    "main.2173898d.css.map": "/DaraProfile/static/css/main.2173898d.css.map",
+    "main.30106afe.js.map": "/DaraProfile/static/js/main.30106afe.js.map",
+    "453.d73b0aaa.chunk.js.map": "/DaraProfile/static/js/453.d73b0aaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9e1f3ba.css",
-    "static/js/main.38ab2732.js"
+    "static/css/main.2173898d.css",
+    "static/js/main.30106afe.js"
   ]
 }
