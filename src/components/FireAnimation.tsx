@@ -29,7 +29,7 @@ const rise = keyframes`
 const Fire = styled.div`
   font-size: 22px;
   filter: blur(${blur});
-  margin: 2em auto 0 auto;
+  margin: 0.8em auto 0 auto;
   position: relative;
   width: 10em;
   height: 12em;
