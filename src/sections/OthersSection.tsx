@@ -74,27 +74,27 @@ function OthersSection() {
       <YearContainer>
         <YearText>2022</YearText>
         <DetailContainer>
+          <OtherDetail type="ranking" contents="DS-데이터톤 우수상" />
           <OtherDetail type="school" contents="덕성여자대학교 컴퓨터공학과 차석" />
           <OtherDetail type="study" contents='개발 동아리 "Corner" 2기 활동' />
           <OtherDetail type="study" contents="자바(JAVA) 컴스터디, CTL 스터디" />
-          <OtherDetail type="ranking" contents="DS-데이터톤 우수상" />
         </DetailContainer>
       </YearContainer>
 
       <YearContainer>
         <YearText>2023</YearText>
         <DetailContainer>
-          <OtherDetail type="school" contents="교직이수, 교육봉사 70시간" />
           <OtherDetail type="code" contents="ICT 이브와 (Gang Mate)" />
-          <OtherDetail type="code" contents='"Swift Coding Club" 2023 1분기 활동' />
           <OtherDetail type="study" contents='개발 동아리 "Corner" 3기 운영진 (기획 팀장)' />
+          <OtherDetail type="study" contents='"Swift Coding Club" 2023 1분기 활동' />
+          <OtherDetail type="school" contents="교직이수, 교육봉사 70시간" />
         </DetailContainer>
       </YearContainer>
 
       <YearContainer>
         <YearText>2024</YearText>
         <DetailContainer>
-          <OtherDetail type="school" contents="ICT 한이음" />
+          <OtherDetail type="code" contents="ICT 한이음" />
         </DetailContainer>
       </YearContainer>
     </Section>

@@ -40,7 +40,7 @@ function OtherDetail({ type, contents }: OtherDetailProps) {
             ? RankingIcon
             : type === "code"
             ? CodeIcon
-            : type === "book"
+            : type === "study"
             ? BookIcon
             : SchoolIcon
         }
