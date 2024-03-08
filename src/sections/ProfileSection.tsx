@@ -58,11 +58,9 @@ const ProfileDescription = styled.div`
   font-size: 22px;
   color: #333;
   text-align: center;
-  margin-top: 10px;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
-  margin-left: 20px;
+  margin: 15px 0px 20px 20px;
 `;
 
 const ProfileIcon = styled.img`
