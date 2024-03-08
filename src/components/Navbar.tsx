@@ -6,6 +6,7 @@ import DaraDara from "../assets/icons/DaraDara.png";
 const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #FFCF51;
   padding: 15px;
   position: fixed;
@@ -29,7 +30,8 @@ const Logo = styled.img`
 
 const MyName = styled.div`
   margin-left: 10px;
-  font-size: 24px;
+  font-size: 20px;
+  margint-bootm: 5px;
   font-family: Pretendard6;
 `;
 
@@ -44,15 +46,15 @@ interface NavItemProps {
 
 const NavItem = styled.div<NavItemProps>`
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Pretendard6;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 10px;
   transition: color 0.3s ease, font-size 0.3s ease, padding 0.3s ease; 
 
   &:hover {
     color: ${props => props.hoverColor || "transparent"};
-    font-size: 24px;
+    font-size: 20px;
     padding: 3px 20px;
   }
 `;
@@ -78,31 +80,31 @@ function Navbar() {
             DaraDara
           </Link>
         </NavItem>
+
         <NavItem hoverColor="#FF6D00">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </NavItem>
-        <NavItem hoverColor="#FF5400">
-          <Link to="archiving" smooth={true} duration={500}>
-            Archiving
-          </Link>
-        </NavItem>
+
         <NavItem hoverColor="#FF4800">
           <Link to="projects" smooth={true} duration={500}>
             Projects
           </Link>
         </NavItem>
+
         <NavItem hoverColor="#DC2F02">
           <Link to="awards" smooth={true} duration={500}>
             Awards
           </Link>
         </NavItem>
+
         <NavItem hoverColor="#D00000">
           <Link to="others" smooth={true} duration={500}>
             Others
           </Link>
         </NavItem>
+
         <NavItem hoverColor="#9D0208">
           <Link to="board" smooth={true} duration={500}>
             Board

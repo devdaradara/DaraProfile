@@ -4,7 +4,6 @@ import styled from "styled-components";
 import IntroduceSection from '../sections/IntroduceSection';
 import ProfileSection from '../sections/ProfileSection';
 import SkillsSection from '../sections/SkillsSection';
-import ArchivingSection from '../sections/ArchivingSection';
 import ProjectsSection from '../sections/ProjectsSection';
 import AwardsSection from '../sections/AwardsSection';
 import OthersSection from '../sections/OthersSection';
@@ -21,7 +20,6 @@ function MainPage() {
       <IntroduceSection />
       <ProfileSection />
       <SkillsSection />
-      <ArchivingSection />
       <ProjectsSection />
       <AwardsSection />
       <OthersSection />
