@@ -5,7 +5,6 @@ import IntroduceSection from '../sections/IntroduceSection';
 import ProfileSection from '../sections/ProfileSection';
 import SkillsSection from '../sections/SkillsSection';
 import ProjectsSection from '../sections/ProjectsSection';
-import AwardsSection from '../sections/AwardsSection';
 import OthersSection from '../sections/OthersSection';
 // import BoardSection from '../sections/BoardSection';
 
@@ -21,7 +20,6 @@ function MainPage() {
       <ProfileSection />
       <SkillsSection />
       <ProjectsSection />
-      <AwardsSection />
       <OthersSection />
       {/* <BoardSection /> */}
     </Main>

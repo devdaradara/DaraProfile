@@ -95,12 +95,6 @@ function Navbar() {
           </Link>
         </NavItem>
 
-        <NavItem hoverColor="#DC2F02">
-          <Link to="awards" smooth={true} duration={500}>
-            Awards
-          </Link>
-        </NavItem>
-
         <NavItem hoverColor="#D00000">
           <Link to="others" smooth={true} duration={500}>
             Others
