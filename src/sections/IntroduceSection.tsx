@@ -95,7 +95,7 @@ function IntroduceSection() {
 
   return (
     <Section id="introduce">
-      <FireAnimation />
+      {/* <FireAnimation /> */}
 
       <TitleContext>
         <TitleText>세상을 변화시킬 작은 불씨</TitleText>
