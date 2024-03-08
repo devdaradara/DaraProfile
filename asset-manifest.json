@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DaraProfile/static/css/main.2173898d.css",
-    "main.js": "/DaraProfile/static/js/main.43411b8c.js",
+    "main.js": "/DaraProfile/static/js/main.aace6b0f.js",
     "static/js/453.d73b0aaa.chunk.js": "/DaraProfile/static/js/453.d73b0aaa.chunk.js",
     "static/media/Pretendard-SemiBold.otf": "/DaraProfile/static/media/Pretendard-SemiBold.4b3283bc0e29a9c97c11.otf",
     "static/media/Pretendard-Regular.otf": "/DaraProfile/static/media/Pretendard-Regular.57ca7a4b20797e3b9625.otf",
@@ -16,11 +16,11 @@
     "static/media/email.png": "/DaraProfile/static/media/email.9d4fb065e6679439a9a3.png",
     "index.html": "/DaraProfile/index.html",
     "main.2173898d.css.map": "/DaraProfile/static/css/main.2173898d.css.map",
-    "main.43411b8c.js.map": "/DaraProfile/static/js/main.43411b8c.js.map",
+    "main.aace6b0f.js.map": "/DaraProfile/static/js/main.aace6b0f.js.map",
     "453.d73b0aaa.chunk.js.map": "/DaraProfile/static/js/453.d73b0aaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2173898d.css",
-    "static/js/main.43411b8c.js"
+    "static/js/main.aace6b0f.js"
   ]
 }
