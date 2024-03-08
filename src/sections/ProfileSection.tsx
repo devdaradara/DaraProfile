@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 import { BusinessCard } from "../components/BusinessCard";
 
-import DaraDaraV from "../assets/icons/DaraDaraV.jpeg";
 import UserIcon from "../assets/icons/user.png";
 import GithubIcon from "../assets/icons/github.png";
 import TistoryIcon from "../assets/icons/tistory.png";
@@ -12,10 +11,9 @@ import LinkIcon from "../assets/icons/link.png";
 import CodeIcon from "../assets/icons/code.png";
 
 const Section = styled.div`
-  height: 100vh;
-  padding-top: 80px;
-  margin-top: -85px;
-  margin-bottom: 18px;
+  padding-top: 85px;
+  margin-top: -100px;
+  margin-bottom: 180px;
 `;
 
 const TitleContainer = styled.div`
