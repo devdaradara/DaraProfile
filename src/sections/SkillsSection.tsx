@@ -98,7 +98,7 @@ function SkillsSection() {
     <Section id="skills">
       <Link to="skills" smooth={true} duration={500}>
         <TitleContainer>
-          <TitleLink src={LinkIcon} alt="UserIcon" />
+          <TitleLink src={LinkIcon} alt="LinkIcon" />
           <TitleText>Skills</TitleText>
         </TitleContainer>
       </Link>

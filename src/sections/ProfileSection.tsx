@@ -103,7 +103,7 @@ function ProfileSection() {
     <Section id="profile">
       <Link to="profile" smooth={true} duration={500}>
         <TitleContainer>
-          <TitleLink src={LinkIcon} alt="UserIcon" />
+          <TitleLink src={LinkIcon} alt="LinkIcon" />
           <TitleText>Profile</TitleText>
         </TitleContainer>
       </Link>

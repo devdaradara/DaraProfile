@@ -77,19 +77,19 @@ function Navbar() {
       </NameSection>
 
       <NavItems>
-        <NavItem hoverColor="#FF8500">
+        <NavItem hoverColor="#FFB600">
           <Link to="profile" smooth={true} duration={500}>
             DaraDara
           </Link>
         </NavItem>
 
-        <NavItem hoverColor="#FF6D00">
+        <NavItem hoverColor="#FF8500">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </NavItem>
 
-        <NavItem hoverColor="#FF4800">
+        <NavItem hoverColor="#FF5400">
           <Link to="projects" smooth={true} duration={500}>
             Projects
           </Link>
