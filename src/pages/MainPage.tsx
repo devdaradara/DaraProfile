@@ -7,7 +7,7 @@ import SkillsSection from '../sections/SkillsSection';
 import ProjectsSection from '../sections/ProjectsSection';
 import AwardsSection from '../sections/AwardsSection';
 import OthersSection from '../sections/OthersSection';
-import BoardSection from '../sections/BoardSection';
+// import BoardSection from '../sections/BoardSection';
 
 const Main = styled.div`
   font-size: 40px;
@@ -23,7 +23,7 @@ function MainPage() {
       <ProjectsSection />
       <AwardsSection />
       <OthersSection />
-      <BoardSection />
+      {/* <BoardSection /> */}
     </Main>
   )
 }

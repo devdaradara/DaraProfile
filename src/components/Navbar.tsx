@@ -106,11 +106,11 @@ function Navbar() {
           </Link>
         </NavItem>
 
-        <NavItem hoverColor="#9D0208">
+        {/* <NavItem hoverColor="#9D0208">
           <Link to="board" smooth={true} duration={500}>
             Board
           </Link>
-        </NavItem>
+        </NavItem> */}
       </NavItems>
     </NavbarContainer>
   );
