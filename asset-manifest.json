@@ -1,25 +1,41 @@
 {
   "files": {
     "main.css": "/DaraProfile/static/css/main.2173898d.css",
-    "main.js": "/DaraProfile/static/js/main.df45a6d2.js",
-    "static/js/453.d73b0aaa.chunk.js": "/DaraProfile/static/js/453.d73b0aaa.chunk.js",
+    "main.js": "/DaraProfile/static/js/main.16a8d520.js",
+    "static/js/453.f12206d8.chunk.js": "/DaraProfile/static/js/453.f12206d8.chunk.js",
     "static/media/Pretendard-SemiBold.otf": "/DaraProfile/static/media/Pretendard-SemiBold.4b3283bc0e29a9c97c11.otf",
     "static/media/Pretendard-Regular.otf": "/DaraProfile/static/media/Pretendard-Regular.57ca7a4b20797e3b9625.otf",
     "static/media/Pretendard-Black.otf": "/DaraProfile/static/media/Pretendard-Black.ed4fa19a4df95cb6740b.otf",
     "static/media/Pretendard-ExtraLight.otf": "/DaraProfile/static/media/Pretendard-ExtraLight.c1677723ce338097648f.otf",
     "static/media/Pretendard-Thin.otf": "/DaraProfile/static/media/Pretendard-Thin.e45abc28d4828e92dd10.otf",
     "static/media/DaraDaraV.jpeg": "/DaraProfile/static/media/DaraDaraV.cdc948c259f7363e669a.jpeg",
+    "static/media/android-studio.png": "/DaraProfile/static/media/android-studio.0e25589b365a6107cb48.png",
+    "static/media/kotlin.png": "/DaraProfile/static/media/kotlin.12b01c2d06d69055e985.png",
+    "static/media/git.png": "/DaraProfile/static/media/git.8322c082f223fd807d36.png",
+    "static/media/firebase.png": "/DaraProfile/static/media/firebase.88fcc3e3af2263815629.png",
+    "static/media/java-script.png": "/DaraProfile/static/media/java-script.28d87eb26073cbc28c61.png",
+    "static/media/react.png": "/DaraProfile/static/media/react.20adfb35ae6a6e5817bf.png",
+    "static/media/spring-boot.png": "/DaraProfile/static/media/spring-boot.94f201ce44348763e6a5.png",
+    "static/media/swift.png": "/DaraProfile/static/media/swift.13d82fd58ebf84427765.png",
+    "static/media/python.png": "/DaraProfile/static/media/python.a9b6e4b4de903ebfe553.png",
     "static/media/instagram.png": "/DaraProfile/static/media/instagram.56d3c2ef9b43e98875c0.png",
     "static/media/user.png": "/DaraProfile/static/media/user.bf2aa57c354883cb76fd.png",
+    "static/media/java.png": "/DaraProfile/static/media/java.f5dd86c3ef6ef3f85acf.png",
     "static/media/github.png": "/DaraProfile/static/media/github.22cfdd1cba253783ce51.png",
+    "static/media/jira.png": "/DaraProfile/static/media/jira.f73d91c6adf3ef463b67.png",
+    "static/media/figma.png": "/DaraProfile/static/media/figma.72fbc535ebe253a5dbc4.png",
+    "static/media/html.png": "/DaraProfile/static/media/html.cfb2ba4a6b1c3de295bc.png",
     "static/media/email.png": "/DaraProfile/static/media/email.9d4fb065e6679439a9a3.png",
+    "static/media/css.png": "/DaraProfile/static/media/css.4a6549b8c2b4cda8bb88.png",
+    "static/media/node.png": "/DaraProfile/static/media/node.c62dce9a35f28786a1c3.png",
+    "static/media/type-script.png": "/DaraProfile/static/media/type-script.9ca86337ef133c4b00ef.png",
     "index.html": "/DaraProfile/index.html",
     "main.2173898d.css.map": "/DaraProfile/static/css/main.2173898d.css.map",
-    "main.df45a6d2.js.map": "/DaraProfile/static/js/main.df45a6d2.js.map",
-    "453.d73b0aaa.chunk.js.map": "/DaraProfile/static/js/453.d73b0aaa.chunk.js.map"
+    "main.16a8d520.js.map": "/DaraProfile/static/js/main.16a8d520.js.map",
+    "453.f12206d8.chunk.js.map": "/DaraProfile/static/js/453.f12206d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2173898d.css",
-    "static/js/main.df45a6d2.js"
+    "static/js/main.16a8d520.js"
   ]
 }
