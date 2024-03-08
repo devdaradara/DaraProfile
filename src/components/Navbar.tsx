@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import DaraDara from "../assets/icons/DaraDara.png";
+import DaraDara from "../assets/icons/DaraDaraV.jpeg";
 
 const NavbarContainer = styled.div`
   display: flex;
@@ -21,24 +21,25 @@ const NameSection = styled.div`
   flex-grow: 1;
   display: flex;
   align-items: center;
-  margin-left: 10rem;
+  margin-left: 3rem;
 `;
 
 const Logo = styled.img`
   height: 35px;
   margin-right: 10px;
+  border-radius: 50%;
 `;
 
 const MyName = styled.div`
   margin-left: 10px;
-  font-size: 20px;
-  margint-bootm: 5px;
+  font-size: 24px;
+  margin-bottom: 5px;
   font-family: Pretendard6;
 `;
 
 const NavItems = styled.div`
   display: flex;
-  margin-right: 10rem;
+  margin-right: 3rem;
 `;
 
 interface NavItemProps {
@@ -47,7 +48,7 @@ interface NavItemProps {
 
 const NavItem = styled.div<NavItemProps>`
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: Pretendard6;
   cursor: pointer;
   padding: 10px;
@@ -55,7 +56,7 @@ const NavItem = styled.div<NavItemProps>`
 
   &:hover {
     color: ${props => props.hoverColor || "transparent"};
-    font-size: 20px;
+    font-size: 24px;
     padding: 3px 20px;
   }
 `;
@@ -70,7 +71,7 @@ function Navbar() {
 
         <MyName>
           <Link to="introduce" smooth={true} duration={500}>
-            RyuJiye
+            Ryu Jiye
           </Link>
         </MyName>
       </NameSection>

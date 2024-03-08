@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import LinkIcon from "../assets/icons/link.png";
 import { BusinessCard } from "../components/BusinessCard";
 
 import UserIcon from "../assets/icons/user.png";
 import GithubIcon from "../assets/icons/github.png";
+import RankingIcon from "../assets/icons/ranking.png";
 import TistoryIcon from "../assets/icons/tistory.png";
 import EmailIcon from "../assets/icons/email.png";
-import LinkIcon from "../assets/icons/link.png";
 import CodeIcon from "../assets/icons/code.png";
 
 const Section = styled.div`
@@ -46,6 +47,7 @@ const ProfileContainer = styled.div`
 const ProfileDescriptionContainer = styled.div`
   width: 100%
   margin-left: 50px;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,6 +129,18 @@ function ProfileSection() {
           </ProfileDescription>
 
           <ProfileDescription>
+            <ProfileIcon src={RankingIcon} alt="RankingIcon" />
+            <a
+              href="https://solved.ac/profile/jiyesung01"
+              style={{ color: "#333" }}
+            >
+              solved.ac/jiyesung01
+            </a>
+          </ProfileDescription>
+        </ProfileDescriptionContainer>
+
+        <ProfileDescriptionContainer>
+          <ProfileDescription>
             <ProfileIcon src={EmailIcon} alt="EmailIcon" />
             <a href="mailto:devdaradara@gmail.com" style={{ color: "#333" }}>
               devdaradara@gmail.com
@@ -141,7 +155,7 @@ function ProfileSection() {
               rel="noreferrer"
               style={{ color: "#333" }}
             >
-              https://github.com/devdaradara
+              github.com/devdaradara
             </a>
           </ProfileDescription>
 
@@ -153,7 +167,7 @@ function ProfileSection() {
               rel="noreferrer"
               style={{ color: "#333" }}
             >
-              https://daradarav.tistory.com/
+              daradarav.tistory.com
             </a>
           </ProfileDescription>
         </ProfileDescriptionContainer>
