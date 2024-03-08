@@ -60,7 +60,7 @@ const DescriptionText = styled.div`
 
 const MoreButton = styled.img`
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   cursor: pointer;
   width: 40px;
   height: 40px;

@@ -150,6 +150,9 @@ function SkillsSection() {
         <SkillContainer>
           <SkillTitle>App</SkillTitle>
           <SkillBadgeContainer>
+            <SkillBadge style={{padding: "3px"}}>
+              <SkillBadgeImg src={ReactIcon} alt="ReactIcon"/>
+            </SkillBadge>
             <SkillBadge>
               <SkillBadgeImg src={SwiftIcon} alt="SwiftIcon" />
             </SkillBadge>
