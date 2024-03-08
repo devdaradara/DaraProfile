@@ -33,7 +33,7 @@ const TitleLink = styled.img`
 const TitleText = styled.div`
   font-size: 60px;
   padding: 12px 0px;
-  font-family: Pretendard6;
+  font-family: Pretendard9;
 `;
 
 const ProfileContainer = styled.div`

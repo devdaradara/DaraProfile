@@ -29,7 +29,6 @@ import GitHubIcon from "../assets/icons/skills/github.png";
 const Section = styled.div`
   height: 100vh;
   padding-top: 85px;
-  padding-bottom: 100px;
   margin-top: -100px;
   margin-bottom: 100px;
   background-color: #f5f5f5;
@@ -40,7 +39,6 @@ const TitleContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
 `;
 
 const TitleLink = styled.img`
@@ -51,7 +49,7 @@ const TitleLink = styled.img`
 const TitleText = styled.div`
   font-size: 60px;
   padding: 12px 0px;
-  font-family: Pretendard6;
+  font-family: Pretendard9;
 `;
 
 const AllSkillContainer = styled.div`
@@ -67,8 +65,8 @@ const SkillContainer = styled.div`
 `;
 
 const SkillTitle = styled.div`
-  font-size: 40px;
-  padding: 12px 0px;
+  margin-top: 20px;
+  font-size: 34px;
   font-family: Pretendard6;
 `;
 
@@ -80,7 +78,7 @@ const SkillBadgeContainer = styled.div`
 `;
 
 const SkillBadge = styled.div`
-  height: 100px;
+  height: 80px;
   background-color: #fff;
   border-radius: 23px;
   box-shadow: 0px 0px 10px 0px #666666;
@@ -88,8 +86,8 @@ const SkillBadge = styled.div`
 `;
 
 const SkillBadgeImg = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   object-position: center;
   border-radius: 23px;
