@@ -11,11 +11,12 @@ import TistoryIcon from "../assets/icons/tistory.png";
 const Section = styled.div`
   padding-top: 85px;
   margin-top: -100px;
-  margin-bottom: 18px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #f5f5f5;
 `;
 
 const TitleContext = styled.div`
@@ -59,6 +60,7 @@ const DescriptionText = styled.div`
 
 const MoreButton = styled.img`
   margin-top: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
   width: 40px;
   height: 40px;

@@ -7,13 +7,14 @@ const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFCF51;
+  background-color: #fff;
   padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 `;
 
 const NameSection = styled.div`
