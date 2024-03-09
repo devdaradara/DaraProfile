@@ -1,19 +1,8 @@
 {
   "files": {
-    "main.css": "/DaraProfile/static/css/main.2173898d.css",
-    "main.js": "/DaraProfile/static/js/main.53cb72ce.js",
-    "static/js/693.5bc482db.chunk.js": "/DaraProfile/static/js/693.5bc482db.chunk.js",
-    "static/js/229.28c6f8b8.chunk.js": "/DaraProfile/static/js/229.28c6f8b8.chunk.js",
-    "static/js/562.e0a818d3.chunk.js": "/DaraProfile/static/js/562.e0a818d3.chunk.js",
-    "static/js/545.38a5161f.chunk.js": "/DaraProfile/static/js/545.38a5161f.chunk.js",
-    "static/js/514.8e928da6.chunk.js": "/DaraProfile/static/js/514.8e928da6.chunk.js",
+    "main.css": "/DaraProfile/static/css/main.379f48c7.css",
+    "main.js": "/DaraProfile/static/js/main.5f611fd4.js",
     "static/js/453.f12206d8.chunk.js": "/DaraProfile/static/js/453.f12206d8.chunk.js",
-    "static/js/914.bff132fa.chunk.js": "/DaraProfile/static/js/914.bff132fa.chunk.js",
-    "static/media/Pretendard-SemiBold.otf": "/DaraProfile/static/media/Pretendard-SemiBold.4b3283bc0e29a9c97c11.otf",
-    "static/media/Pretendard-Regular.otf": "/DaraProfile/static/media/Pretendard-Regular.57ca7a4b20797e3b9625.otf",
-    "static/media/Pretendard-Black.otf": "/DaraProfile/static/media/Pretendard-Black.ed4fa19a4df95cb6740b.otf",
-    "static/media/Pretendard-ExtraLight.otf": "/DaraProfile/static/media/Pretendard-ExtraLight.c1677723ce338097648f.otf",
-    "static/media/Pretendard-Thin.otf": "/DaraProfile/static/media/Pretendard-Thin.e45abc28d4828e92dd10.otf",
     "static/media/DaraDaraV.jpeg": "/DaraProfile/static/media/DaraDaraV.cdc948c259f7363e669a.jpeg",
     "static/media/android-studio.png": "/DaraProfile/static/media/android-studio.0e25589b365a6107cb48.png",
     "static/media/kotlin.png": "/DaraProfile/static/media/kotlin.12b01c2d06d69055e985.png",
@@ -40,17 +29,12 @@
     "static/media/node.png": "/DaraProfile/static/media/node.c62dce9a35f28786a1c3.png",
     "static/media/type-script.png": "/DaraProfile/static/media/type-script.9ca86337ef133c4b00ef.png",
     "index.html": "/DaraProfile/index.html",
-    "main.2173898d.css.map": "/DaraProfile/static/css/main.2173898d.css.map",
-    "main.53cb72ce.js.map": "/DaraProfile/static/js/main.53cb72ce.js.map",
-    "693.5bc482db.chunk.js.map": "/DaraProfile/static/js/693.5bc482db.chunk.js.map",
-    "229.28c6f8b8.chunk.js.map": "/DaraProfile/static/js/229.28c6f8b8.chunk.js.map",
-    "562.e0a818d3.chunk.js.map": "/DaraProfile/static/js/562.e0a818d3.chunk.js.map",
-    "545.38a5161f.chunk.js.map": "/DaraProfile/static/js/545.38a5161f.chunk.js.map",
-    "514.8e928da6.chunk.js.map": "/DaraProfile/static/js/514.8e928da6.chunk.js.map",
+    "main.379f48c7.css.map": "/DaraProfile/static/css/main.379f48c7.css.map",
+    "main.5f611fd4.js.map": "/DaraProfile/static/js/main.5f611fd4.js.map",
     "453.f12206d8.chunk.js.map": "/DaraProfile/static/js/453.f12206d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2173898d.css",
-    "static/js/main.53cb72ce.js"
+    "static/css/main.379f48c7.css",
+    "static/js/main.5f611fd4.js"
   ]
 }
