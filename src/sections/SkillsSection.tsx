@@ -29,6 +29,7 @@ import GitHubIcon from "../assets/icons/skills/github.png";
 const Section = styled.div`
   height: 100vh;
   padding-top: 85px;
+  padding-bottom: 2em;
   margin-top: -100px;
   margin-bottom: 100px;
   background-color: #f5f5f5;

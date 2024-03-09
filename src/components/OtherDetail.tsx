@@ -25,7 +25,7 @@ const DetailIcon = styled.img`
 `;
 
 const DetailText = styled.div`
-  font-family: Pretendard4;
+  font-family: Pretendard2;
   font-size: 24px;
   color: #333;
   text-align: center;
