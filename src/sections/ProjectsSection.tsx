@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import LinkIcon from "../assets/icons/link.png";
 import styled from "styled-components";
+import { ProjectType, ProjectDetailType } from "../types/projectTypes";
 
 import LeftArrowIcon from "../assets/icons/left-arrow.png";
 import RightArrowIcon from "../assets/icons/right-arrow.png";
@@ -11,10 +12,10 @@ import RightFillArrowIcon from "../assets/icons/right-fill-arrow.png";
 import { ProjectCard } from "../components/ProjectCard";
 import { ProjectDetail } from "../components/ProjectDetail";
 import { ProjectData } from "../data/ProjectData";
+import { ProjectDetailData } from "../data/ProjectDetailData";
 
 const Section = styled.div`
   position: relative;
-  height: 100vh;
   padding-top: 85px;
   margin-top: -100px;
   margin-bottom: 180px;
@@ -50,14 +51,6 @@ const ProjectContainer = styled.div`
   margin: 20px auto;
 `;
 
-
-type Project = {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-};
-
 const ArrowButton = styled.button`
   cursor: pointer;
   background: transparent;
@@ -83,19 +76,26 @@ const ArrowImg = styled.img`
 `;
 
 function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
+  const [selectedProjectDetail, setSelectedProjectDetail] = useState<ProjectDetailType | null>(null);
+  
   const [startIndex, setStartIndex] = useState(0);
   const [isHoveringLeft, setIsHoveringLeft] = useState(false);
   const [isHoveringRight, setIsHoveringRight] = useState(false);
 
+
   const nextProjects = () => {
-    setStartIndex((prevIndex) => (prevIndex + 3) % ProjectData.length);
+    setStartIndex(prevIndex => (prevIndex + 1) % ProjectData.length);
   };
 
   const prevProjects = () => {
-    setStartIndex(
-      (prevIndex) => (prevIndex - 3 + ProjectData.length) % ProjectData.length
-    );
+    setStartIndex(prevIndex => (prevIndex - 1 + ProjectData.length) % ProjectData.length);
+  };
+  
+  const onProjectClick = (project: ProjectType) => {
+    setSelectedProject(project);
+    const projectDetail = ProjectDetailData.find(detail => detail.id === project.id);
+    setSelectedProjectDetail(projectDetail || null);
   };
 
   const displayedProjects = [];
@@ -127,7 +127,7 @@ function ProjectsSection() {
           <ProjectCard
             key={project.id}
             project={project}
-            onClick={() => setSelectedProject(project)}
+            onClick={() => onProjectClick(project)}
           />
         ))}
       </ProjectContainer>
@@ -142,12 +142,7 @@ function ProjectsSection() {
           style={{ opacity: 1 }}
         />
       </RightArrow>
-      {selectedProject && (
-        <ProjectDetail
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
+      {selectedProjectDetail && <ProjectDetail detail={selectedProjectDetail} />}
     </Section>
   );
 }

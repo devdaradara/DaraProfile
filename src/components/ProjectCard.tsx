@@ -1,5 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+
+import { ProjectType } from "../types/projectTypes";
+
+interface ProjectCardProps {
+  project: ProjectType;
+  onClick: () => void;
+}
 
 const Card = styled.div`
   width: 300px;
@@ -7,8 +14,12 @@ const Card = styled.div`
   margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
   &:hover {
-    transform: rotateZ(5deg);
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 `;
@@ -20,32 +31,36 @@ const Image = styled.img`
 `;
 
 const Title = styled.h3`
-  margin: 0;
-  padding: 20px;
+  margin-top: 20px; 
+  padding: 0 20px;
   text-align: center;
+  font-family: 'Pretendard6'
+  font-size: 24px;
 `;
 
 const Description = styled.p`
-  padding: 0 20px 20px 20px;
+  margin-top: 10px;
+  padding: 0 20px 20px;
   text-align: center;
+  font-family: 'Pretendard2'
+  font-size: 16px;
 `;
 
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-}
+const TechStack = styled.p`
+  padding: 0 20px 20px;
+  text-align: center;
+  font-family: 'Pretendard4'
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+`;
 
-interface ProjectCardProps {
-  project: Project;
-  onClick: () => void;
-}
-
-export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({
+  project,
+  onClick,
+}) => {
   const [cardState, setCardState] = React.useState({
     xDeg: 0,
-    yDeg: 0
+    yDeg: 0,
   });
 
   const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -59,17 +74,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
   const onMouseLeave = () => setCardState({ xDeg: 0, yDeg: 0 });
 
   return (
-    <Card 
+    <Card
       onClick={onClick}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
       style={{
-        transform: `perspective(1000px) rotateX(${cardState.xDeg}deg) rotateY(${cardState.yDeg}deg)`
+        transform: `perspective(1000px) rotateX(${cardState.xDeg}deg) rotateY(${cardState.yDeg}deg)`,
       }}
     >
-      <Image src={project.image} alt={project.title} />
       <Title>{project.title}</Title>
+      <Image src={project.image} alt={project.title} />
       <Description>{project.description}</Description>
+      <TechStack>{project.techStack}</TechStack>
     </Card>
   );
 };

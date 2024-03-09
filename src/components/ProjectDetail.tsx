@@ -1,7 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ProjectDetailType } from '../types/projectTypes';
+
+interface ProjectDetailProps {
+  detail: ProjectDetailType;
+}
 
 const DetailSection = styled.div`
+  display: flex;
   width: 80%;
   margin: 20px auto;
   padding: 20px;
@@ -10,12 +16,19 @@ const DetailSection = styled.div`
   background-color: white;
 `;
 
-const Title = styled.h2`
-  margin-bottom: 20px;
+const LeftColumn = styled.div`
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
-const Description = styled.p`
-  margin-bottom: 20px;
+const RightColumn = styled.div`
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Image = styled.img`
@@ -25,33 +38,41 @@ const Image = styled.img`
   margin-bottom: 20px;
 `;
 
-const CloseButton = styled.button`
-  padding: 10px 20px;
-  background-color: #f44336;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+const Title = styled.h2`
+  margin-bottom: 20px;
 `;
 
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-}
+const GitHubLink = styled.a`
+  margin-bottom: 20px;
+  color: #333;
+`;
 
-interface ProjectDetailProps {
-  project: Project;
-  onClose: () => void;
-}
+const ProductionPeriod = styled.p`
+  margin-bottom: 20px;
+`;
 
-export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }) => {
+const Description = styled.p`
+  margin-bottom: 20px;
+`;
+
+const Tech = styled.div`
+  margin-bottom: 20px;
+`;
+
+export const ProjectDetail: React.FC<ProjectDetailProps> = ({ detail }) => {
   return (
     <DetailSection>
-      <Title>{project.title}</Title>
-      <Description>{project.description}</Description>
-      <Image src={project.image} alt={project.title} />
-      <CloseButton onClick={onClose}>닫기</CloseButton>
+      <LeftColumn>
+        <Image src={detail.image} alt={detail.title} />
+        <Title>{detail.title}</Title>
+        <GitHubLink href={detail.githubLink}>GitHub Link</GitHubLink>
+        <ProductionPeriod>제작 기간: {detail.productionPeriod}</ProductionPeriod>
+      </LeftColumn>
+      <RightColumn>
+        <Description>{detail.description}</Description>
+        <Tech>사용 기술: {detail.usedTechnologies.join(', ')}</Tech>
+        <Tech>기술 스택: {detail.techStack.join(', ')}</Tech>
+      </RightColumn>
     </DetailSection>
   );
 };
