@@ -28,6 +28,7 @@ const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+  margin-top: 40px;
 `;
 
 const TitleLink = styled.img`
@@ -98,7 +99,7 @@ function ProjectsSection() {
     const projectDetail = ProjectDetailData.find(detail => detail.id === project.id);
     setSelectedProjectDetail(projectDetail || null);
   };
-
+  
   const displayedProjects = [];
   for (let i = 0; i < 3; i++) {
     displayedProjects.push(ProjectData[(startIndex + i) % ProjectData.length]);
