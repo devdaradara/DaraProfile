@@ -37,15 +37,29 @@ const Title = styled.h3`
   font-family: 'Pretendard'
   font-weight: 600;
   font-size: 24px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Description = styled.p`
   margin-top: 10px;
-  padding: 0 20px 20px;
+  padding: 0px 30px;
   text-align: center;
   font-family: 'Pretendard'
   font-weight: 200;
   font-size: 16px;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-align: center;
 `;
 
 const TechStack = styled.p`
@@ -55,6 +69,7 @@ const TechStack = styled.p`
   font-weight: 400;
   font-size: 14px;
   border-top: 1px solid #ddd;
+  padding-top: 10px;
   margin-top: 20px;
 `;
 

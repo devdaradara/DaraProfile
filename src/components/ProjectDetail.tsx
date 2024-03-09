@@ -54,7 +54,8 @@ const Title = styled.div`
 `;
 
 const GitHubLink = styled.a`
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   font-size: 24px;
   font-family: Pretendard;
   font-weight: 400;
@@ -147,6 +148,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ detail }) => {
     <DetailSection>
       <MidColumn>
         <Title>{detail.title}</Title>
+        <DetailContentText>{detail.oneLine}</DetailContentText>
         <GitHubLink href={detail.githubLink}>GitHub</GitHubLink>
       </MidColumn>
       <AnotherColumn>

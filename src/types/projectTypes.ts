@@ -9,6 +9,7 @@ export interface ProjectType {
 
 export interface ProjectDetailType {
   title: string;
+  oneLine: string;
   description: string;
   images: string[];
   githubLink: string;
