@@ -25,12 +25,14 @@ import GitIcon from "../assets/icons/skills/git.webp";
 import GitHubIcon from "../assets/icons/skills/github.webp";
 
 const Section = styled.div`
-  height: 100vh;
   padding-top: 85px;
-  padding-bottom: 2em;
   margin-top: -100px;
-  margin-bottom: 100px;
   background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 `;
 
 const TitleContainer = styled.div`
@@ -55,6 +57,7 @@ const TitleText = styled.div`
 const AllSkillContainer = styled.div`
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 `;
 
 const SkillContainer = styled.div`
@@ -76,6 +79,8 @@ const SkillBadgeContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
 `;
 
 const SkillBadgeImg = styled.img`

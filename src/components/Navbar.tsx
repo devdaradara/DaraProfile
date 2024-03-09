@@ -6,15 +6,17 @@ import DaraDara from "../assets/icons/DaraDaraV.jpeg";
 const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  padding: 15px;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 `;
 
 const NameSection = styled.div`
@@ -54,10 +56,10 @@ const NavItem = styled.div<NavItemProps>`
   font-weight: 600;
   cursor: pointer;
   padding: 10px;
-  transition: color 0.3s ease, font-size 0.3s ease, padding 0.3s ease; 
+  transition: color 0.3s ease, font-size 0.3s ease, padding 0.3s ease;
 
   &:hover {
-    color: ${props => props.hoverColor || "transparent"};
+    color: ${(props) => props.hoverColor || "transparent"};
     font-size: 24px;
     padding: 3px 20px;
   }
@@ -79,6 +81,12 @@ function Navbar() {
       </NameSection>
 
       <NavItems>
+        <NavItem hoverColor="#ffd500">
+          <Link to="introduce" smooth={true} duration={500}>
+            Hello I'm
+          </Link>
+        </NavItem>
+
         <NavItem hoverColor="#FFB600">
           <Link to="profile" smooth={true} duration={500}>
             DaraDara

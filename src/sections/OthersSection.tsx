@@ -2,9 +2,14 @@ import React from "react";
 import { Link } from "react-scroll";
 import LinkIcon from "../assets/icons/link.webp";
 import styled from "styled-components";
-import OtherDetail from "../components/OtherDetail";
+
+import RankingIcon from "../assets/icons/ranking.webp";
+import CodeIcon from "../assets/icons/code.webp";
+import BookIcon from "../assets/icons/book.webp";
+import SchoolIcon from "../assets/icons/school.webp";
 
 const Section = styled.div`
+  height: 100vh;
   padding-top: 85px;
   padding-bottom: 20px;
   margin-top: -100px;
@@ -41,7 +46,7 @@ const YearContainer = styled.div`
 const YearText = styled.div`
   font-family: Pretendard;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 28px;
   color: #333;
   margin: 12px 30px 20px 0px;
 `;
@@ -53,7 +58,29 @@ const DetailContainer = styled.div`
   align-items: flex-start;
   padding-left: 30px;
   border-left: 2px solid #333;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+`;
+
+
+const OtherDetailContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0px;
+`;
+
+const DetailIcon = styled.img`
+  height: 26px;
+  margin-right: 20px;
+`;
+
+const DetailText = styled.div`
+  font-family: Pretendard;
+  font-weight: 200;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
 `;
 
 function OthersSection() {
@@ -69,34 +96,64 @@ function OthersSection() {
       <YearContainer>
         <YearText>2021</YearText>
         <DetailContainer>
-          <OtherDetail type="school" contents="덕성여자대학교 성적우수 입학" />
+          <OtherDetailContainer>
+            <DetailIcon src={SchoolIcon} />
+            <DetailText>덕성여자대학교 성적우수 입학</DetailText>
+          </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
 
       <YearContainer>
         <YearText>2022</YearText>
         <DetailContainer>
-          <OtherDetail type="ranking" contents="DS-데이터톤 우수상" />
-          <OtherDetail type="school" contents="덕성여자대학교 컴퓨터공학과 차석" />
-          <OtherDetail type="study" contents='개발 동아리 "Corner" 2기 활동' />
-          <OtherDetail type="study" contents="자바(JAVA) 컴스터디, CTL 스터디" />
+          <OtherDetailContainer>
+            <DetailIcon src={RankingIcon} />
+            <DetailText>DS-데이터톤 우수상</DetailText>
+          </OtherDetailContainer>
+          <OtherDetailContainer>
+            <DetailIcon src={SchoolIcon} />
+            <DetailText>덕성여자대학교 컴퓨터공학과 차석</DetailText>
+          </OtherDetailContainer>
+          <OtherDetailContainer>
+            <DetailIcon src={BookIcon} />
+            <DetailText>개발 동아리 "Corner" 2기 활동</DetailText>
+          </OtherDetailContainer>
+          <OtherDetailContainer>
+            <DetailIcon src={BookIcon} />
+            <DetailText>자바(JAVA) 컴스터디, CTL 스터디</DetailText>
+          </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
 
       <YearContainer>
         <YearText>2023</YearText>
         <DetailContainer>
-          <OtherDetail type="code" contents="ICT 이브와 (Gang Mate)" />
-          <OtherDetail type="study" contents='개발 동아리 "Corner" 3기 운영진 (기획 팀장)' />
-          <OtherDetail type="study" contents='"Swift Coding Club" 2023 1분기 활동' />
-          <OtherDetail type="school" contents="교직이수, 교육봉사 70시간" />
+          <OtherDetailContainer>
+            <DetailIcon src={CodeIcon} />
+            <DetailText>ICT 이브와 (Gang Mate)</DetailText>
+          </OtherDetailContainer>
+          <OtherDetailContainer>
+            <DetailIcon src={BookIcon} />
+            <DetailText>개발 동아리 "Corner" 3기 운영진 (기획 팀장)</DetailText>
+          </OtherDetailContainer>
+          <OtherDetailContainer>
+            <DetailIcon src={BookIcon} />
+            <DetailText>"Swift Coding Club" 2023 1분기 활동</DetailText>
+          </OtherDetailContainer>
+          <OtherDetailContainer>
+            <DetailIcon src={SchoolIcon} />
+            <DetailText>교직이수, 교육봉사 70시간</DetailText>
+          </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
 
       <YearContainer>
         <YearText>2024</YearText>
         <DetailContainer>
-          <OtherDetail type="code" contents="ICT 한이음" />
+          <OtherDetailContainer>
+            <DetailIcon src={CodeIcon} />
+            <DetailText>ICT 한이음</DetailText>
+          </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
     </Section>
