@@ -34,7 +34,8 @@ const Title = styled.h3`
   margin-top: 20px; 
   padding: 0 20px;
   text-align: center;
-  font-family: 'Pretendard6'
+  font-family: 'Pretendard'
+  font-weight: 600;
   font-size: 24px;
 `;
 
@@ -42,14 +43,17 @@ const Description = styled.p`
   margin-top: 10px;
   padding: 0 20px 20px;
   text-align: center;
-  font-family: 'Pretendard2'
+  font-family: 'Pretendard'
+  font-weight: 200;
   font-size: 16px;
 `;
 
 const TechStack = styled.p`
   padding: 0 20px 20px;
   text-align: center;
-  font-family: 'Pretendard4'
+  font-family: 'Pretendard'
+  font-weight: 400;
+  font-size: 14px;
   border-top: 1px solid #ddd;
   margin-top: 20px;
 `;

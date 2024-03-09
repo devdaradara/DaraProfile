@@ -33,7 +33,8 @@ const TitleLink = styled.img`
 const TitleText = styled.div`
   font-size: 60px;
   padding: 12px 0px;
-  font-family: Pretendard9;
+  font-family: Pretendard;
+  font-weight: 900;
 `;
 
 const ProfileContainer = styled.div`
@@ -54,7 +55,8 @@ const ProfileDescriptionContainer = styled.div`
 `;
 
 const ProfileDescription = styled.div`
-  font-family: Pretendard4;
+  font-family: Pretendard;
+  font-weight: 400;
   font-size: 22px;
   color: #333;
   text-align: center;

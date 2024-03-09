@@ -37,17 +37,20 @@ const TitleContext = styled.div`
 const TitleText = styled.div`
   font-size: 34px;
   padding: 12px 0px;
-  font-family: Pretendard6;
+  font-family: Pretendard;
+  font-weight: 600;
   color: #333;
 `;
 
 const TitleNameText = styled.div`
   font-size: 38px;
-  font-family: Pretendard9;
+  font-family: Pretendard;
+  font-weight: 900;
 `;
 
 const DescriptionContainer = styled.div`
-  font-family: Pretendard2;
+  font-family: Pretendard;
+  font-weight: 200;
   font-size: 20px;
   color: #333;
   max-width: 60%;

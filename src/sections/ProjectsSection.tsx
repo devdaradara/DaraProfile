@@ -38,7 +38,8 @@ const TitleLink = styled.img`
 const TitleText = styled.div`
   font-size: 60px;
   padding: 12px 0px;
-  font-family: Pretendard9;
+  font-family: Pretendard;
+  font-weight: 900;
 `;
 
 const ProjectContainer = styled.div`
@@ -91,7 +92,7 @@ function ProjectsSection() {
   const prevProjects = () => {
     setStartIndex(prevIndex => (prevIndex - 1 + ProjectData.length) % ProjectData.length);
   };
-  
+
   const onProjectClick = (project: ProjectType) => {
     setSelectedProject(project);
     const projectDetail = ProjectDetailData.find(detail => detail.id === project.id);

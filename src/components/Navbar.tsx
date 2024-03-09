@@ -34,7 +34,8 @@ const MyName = styled.div`
   margin-left: 10px;
   font-size: 24px;
   margin-bottom: 5px;
-  font-family: Pretendard6;
+  font-family: Pretendard;
+  font-weight: 600;
 `;
 
 const NavItems = styled.div`
@@ -49,7 +50,8 @@ interface NavItemProps {
 const NavItem = styled.div<NavItemProps>`
   margin-left: 10px;
   font-size: 20px;
-  font-family: Pretendard6;
+  font-family: Pretendard;
+  font-weight: 600;
   cursor: pointer;
   padding: 10px;
   transition: color 0.3s ease, font-size 0.3s ease, padding 0.3s ease; 

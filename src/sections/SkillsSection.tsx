@@ -48,7 +48,8 @@ const TitleLink = styled.img`
 const TitleText = styled.div`
   font-size: 60px;
   padding: 12px 0px;
-  font-family: Pretendard9;
+  font-family: Pretendard;
+  font-weight: 900;
 `;
 
 const AllSkillContainer = styled.div`
@@ -66,7 +67,8 @@ const SkillContainer = styled.div`
 const SkillTitle = styled.div`
   margin-top: 20px;
   font-size: 34px;
-  font-family: Pretendard6;
+  font-family: Pretendard;
+  font-weight: 600;
 `;
 
 const SkillBadgeContainer = styled.div`
@@ -122,14 +124,16 @@ const SkillOverlay = styled.div`
 
 const SkillOverlayTitle = styled.div`
   font-size: 16px;
-  font-family: Pretendard6;
+  font-family: Pretendard;
+  font-weight: 600;
   text-align: center; 
   margin-bottom: 5px;
 `;
 
 const SkillOverlayText = styled.div`
   font-size: 16px;
-  font-family: Pretendard4;
+  font-family: Pretendard;
+  font-weight: 600;
   text-align: center; 
 `;
 

@@ -27,7 +27,8 @@ const TitleLink = styled.img`
 const TitleText = styled.div`
   font-size: 60px;
   padding: 12px 0px;
-  font-family: Pretendard9;
+  font-family: Pretendard;
+  font-weight: 900;
 `;
 
 const YearContainer = styled.div`
@@ -38,7 +39,8 @@ const YearContainer = styled.div`
 `;
 
 const YearText = styled.div`
-  font-family: Pretendard6;
+  font-family: Pretendard;
+  font-weight: 600;
   font-size: 30px;
   color: #333;
   margin: 12px 30px 20px 0px;
