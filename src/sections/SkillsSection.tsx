@@ -1,28 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import LinkIcon from "../assets/icons/link.png";
+import LinkIcon from "../assets/icons/link.webp";
 
-import ReactIcon from "../assets/icons/skills/react.png";
-import HtmlIcon from "../assets/icons/skills/html.png";
-import CssIcon from "../assets/icons/skills/css.png";
-import JavaScriptIcon from "../assets/icons/skills/java-script.png";
-import TypeScriptIcon from "../assets/icons/skills/type-script.png";
+import ReactIcon from "../assets/icons/skills/react.webp";
+import HtmlIcon from "../assets/icons/skills/html.webp";
+import CssIcon from "../assets/icons/skills/css.webp";
+import JavaScriptIcon from "../assets/icons/skills/java-script.webp";
+import TypeScriptIcon from "../assets/icons/skills/type-script.webp";
 
-import JavaIcon from "../assets/icons/skills/java.png";
-import PythonIcon from "../assets/icons/skills/python.png";
-import SpringBootIcon from "../assets/icons/skills/spring-boot.png";
-import NodeJsIcon from "../assets/icons/skills/node.png";
-import FireBaseIcon from "../assets/icons/skills/firebase.png";
+import JavaIcon from "../assets/icons/skills/java.webp";
+import PythonIcon from "../assets/icons/skills/python.webp";
+import SpringBootIcon from "../assets/icons/skills/spring-boot.webp";
+import NodeJsIcon from "../assets/icons/skills/node.webp";
+import FireBaseIcon from "../assets/icons/skills/firebase.webp";
 
-import SwiftIcon from "../assets/icons/skills/swift.png";
-import KotlinIcon from "../assets/icons/skills/kotlin.png";
-import AndroidStudioIcon from "../assets/icons/skills/android-studio.png";
+import SwiftIcon from "../assets/icons/skills/swift.webp";
+import KotlinIcon from "../assets/icons/skills/kotlin.webp";
+import AndroidStudioIcon from "../assets/icons/skills/android-studio.webp";
 
-import JiraIcon from "../assets/icons/skills/jira.png";
-import FigmaIcon from "../assets/icons/skills/figma.png";
-import GitIcon from "../assets/icons/skills/git.png";
-import GitHubIcon from "../assets/icons/skills/github.png";
+import JiraIcon from "../assets/icons/skills/jira.webp";
+import FigmaIcon from "../assets/icons/skills/figma.webp";
+import GitIcon from "../assets/icons/skills/git.webp";
+import GitHubIcon from "../assets/icons/skills/github.webp";
 
 const Section = styled.div`
   height: 100vh;
@@ -133,7 +133,7 @@ const SkillOverlayTitle = styled.div`
 const SkillOverlayText = styled.div`
   font-size: 16px;
   font-family: Pretendard;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center; 
 `;
 

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-import RankingIcon from "../assets/icons/ranking.png";
-import CodeIcon from "../assets/icons/code.png";
-import BookIcon from "../assets/icons/book.png";
-import SchoolIcon from "../assets/icons/school.png";
+import RankingIcon from "../assets/icons/ranking.webp";
+import CodeIcon from "../assets/icons/code.webp";
+import BookIcon from "../assets/icons/book.webp";
+import SchoolIcon from "../assets/icons/school.webp";
 
 interface OtherDetailProps {
   type: string;

@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { scroller } from "react-scroll";
 import FireAnimation from "../components/FireAnimation";
 
-import DownArrow from "../assets/icons/DownArrow.png";
-import GithubIcon from "../assets/icons/github.png";
-import InstagramIcon from "../assets/icons/instagram.png";
-import TistoryIcon from "../assets/icons/tistory.png";
+import DownArrow from "../assets/icons/DownArrow.webp";
+import GithubIcon from "../assets/icons/github.webp";
+import InstagramIcon from "../assets/icons/instagram.webp";
+import TistoryIcon from "../assets/icons/tistory.webp";
 
 const Section = styled.div`
   padding-top: 85px;

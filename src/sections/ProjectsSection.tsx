@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import LinkIcon from "../assets/icons/link.png";
+import LinkIcon from "../assets/icons/link.webp";
 import styled from "styled-components";
 import { ProjectType, ProjectDetailType } from "../types/projectTypes";
 
-import LeftArrowIcon from "../assets/icons/left-arrow.png";
-import RightArrowIcon from "../assets/icons/right-arrow.png";
-import LeftFillArrowIcon from "../assets/icons/left-fill-arrow.png";
-import RightFillArrowIcon from "../assets/icons/right-fill-arrow.png";
+import LeftArrowIcon from "../assets/icons/left-arrow.webp";
+import RightArrowIcon from "../assets/icons/right-arrow.webp";
+import LeftFillArrowIcon from "../assets/icons/left-fill-arrow.webp";
+import RightFillArrowIcon from "../assets/icons/right-fill-arrow.webp";
 
 import { ProjectCard } from "../components/ProjectCard";
 import { ProjectDetail } from "../components/ProjectDetail";

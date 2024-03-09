@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import LinkIcon from "../assets/icons/link.png";
+import LinkIcon from "../assets/icons/link.webp";
 import { BusinessCard } from "../components/BusinessCard";
 
-import UserIcon from "../assets/icons/user.png";
-import GithubIcon from "../assets/icons/github.png";
-import RankingIcon from "../assets/icons/ranking.png";
-import TistoryIcon from "../assets/icons/tistory.png";
-import EmailIcon from "../assets/icons/email.png";
-import CodeIcon from "../assets/icons/code.png";
+import UserIcon from "../assets/icons/user.webp";
+import GithubIcon from "../assets/icons/github.webp";
+import RankingIcon from "../assets/icons/ranking.webp";
+import TistoryIcon from "../assets/icons/tistory.webp";
+import EmailIcon from "../assets/icons/email.webp";
+import CodeIcon from "../assets/icons/code.webp";
 
 const Section = styled.div`
   padding-top: 85px;

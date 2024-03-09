@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import LinkIcon from "../assets/icons/link.png";
+import LinkIcon from "../assets/icons/link.webp";
 import styled from "styled-components";
 import OtherDetail from "../components/OtherDetail";
 
