@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DaraProfile/static/css/main.2173898d.css",
-    "main.js": "/DaraProfile/static/js/main.16a8d520.js",
+    "main.js": "/DaraProfile/static/js/main.5b5570ae.js",
     "static/js/453.f12206d8.chunk.js": "/DaraProfile/static/js/453.f12206d8.chunk.js",
     "static/media/Pretendard-SemiBold.otf": "/DaraProfile/static/media/Pretendard-SemiBold.4b3283bc0e29a9c97c11.otf",
     "static/media/Pretendard-Regular.otf": "/DaraProfile/static/media/Pretendard-Regular.57ca7a4b20797e3b9625.otf",
@@ -22,7 +22,11 @@
     "static/media/user.png": "/DaraProfile/static/media/user.bf2aa57c354883cb76fd.png",
     "static/media/java.png": "/DaraProfile/static/media/java.f5dd86c3ef6ef3f85acf.png",
     "static/media/github.png": "/DaraProfile/static/media/github.22cfdd1cba253783ce51.png",
+    "static/media/left-fill-arrow.png": "/DaraProfile/static/media/left-fill-arrow.6d81ecad3525f6f15fa5.png",
+    "static/media/right-fill-arrow.png": "/DaraProfile/static/media/right-fill-arrow.2e07d0cf2022320ab35b.png",
+    "static/media/left-arrow.png": "/DaraProfile/static/media/left-arrow.98e036d960c989582dd6.png",
     "static/media/jira.png": "/DaraProfile/static/media/jira.f73d91c6adf3ef463b67.png",
+    "static/media/right-arrow.png": "/DaraProfile/static/media/right-arrow.b94fc61f1fde901e235f.png",
     "static/media/figma.png": "/DaraProfile/static/media/figma.72fbc535ebe253a5dbc4.png",
     "static/media/html.png": "/DaraProfile/static/media/html.cfb2ba4a6b1c3de295bc.png",
     "static/media/email.png": "/DaraProfile/static/media/email.9d4fb065e6679439a9a3.png",
@@ -31,11 +35,11 @@
     "static/media/type-script.png": "/DaraProfile/static/media/type-script.9ca86337ef133c4b00ef.png",
     "index.html": "/DaraProfile/index.html",
     "main.2173898d.css.map": "/DaraProfile/static/css/main.2173898d.css.map",
-    "main.16a8d520.js.map": "/DaraProfile/static/js/main.16a8d520.js.map",
+    "main.5b5570ae.js.map": "/DaraProfile/static/js/main.5b5570ae.js.map",
     "453.f12206d8.chunk.js.map": "/DaraProfile/static/js/453.f12206d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2173898d.css",
-    "static/js/main.16a8d520.js"
+    "static/js/main.5b5570ae.js"
   ]
 }
