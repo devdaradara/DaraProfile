@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DaraProfile/static/css/main.379f48c7.css",
-    "main.js": "/DaraProfile/static/js/main.e8bb86bd.js",
+    "main.js": "/DaraProfile/static/js/main.cbb1edac.js",
     "static/js/453.f12206d8.chunk.js": "/DaraProfile/static/js/453.f12206d8.chunk.js",
     "static/media/DaraDaraV.jpeg": "/DaraProfile/static/media/DaraDaraV.cdc948c259f7363e669a.jpeg",
     "static/media/git.webp": "/DaraProfile/static/media/git.315b892dc54267016198.webp",
@@ -37,11 +37,11 @@
     "static/media/tistory.webp": "/DaraProfile/static/media/tistory.2fd238efdd88f91e461f.webp",
     "index.html": "/DaraProfile/index.html",
     "main.379f48c7.css.map": "/DaraProfile/static/css/main.379f48c7.css.map",
-    "main.e8bb86bd.js.map": "/DaraProfile/static/js/main.e8bb86bd.js.map",
+    "main.cbb1edac.js.map": "/DaraProfile/static/js/main.cbb1edac.js.map",
     "453.f12206d8.chunk.js.map": "/DaraProfile/static/js/453.f12206d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.379f48c7.css",
-    "static/js/main.e8bb86bd.js"
+    "static/js/main.cbb1edac.js"
   ]
 }
