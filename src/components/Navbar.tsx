@@ -34,7 +34,7 @@ const Logo = styled.img`
 
 const MyName = styled.div`
   margin-left: 10px;
-  font-size: 24px;
+  font-size: 16px;
   margin-bottom: 5px;
   font-family: Pretendard;
   font-weight: 600;
@@ -51,7 +51,7 @@ interface NavItemProps {
 
 const NavItem = styled.div<NavItemProps>`
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Pretendard;
   font-weight: 600;
   cursor: pointer;
@@ -81,15 +81,9 @@ function Navbar() {
       </NameSection>
 
       <NavItems>
-        <NavItem hoverColor="#ffd500">
-          <Link to="introduce" smooth={true} duration={500}>
-            Hello I'm
-          </Link>
-        </NavItem>
-
         <NavItem hoverColor="#FFB600">
           <Link to="profile" smooth={true} duration={500}>
-            DaraDara
+            Aboout
           </Link>
         </NavItem>
 

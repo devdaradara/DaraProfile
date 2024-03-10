@@ -68,7 +68,7 @@ const SkillContainer = styled.div`
 `;
 
 const SkillTitle = styled.div`
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 34px;
   font-family: Pretendard;
   font-weight: 600;
@@ -79,7 +79,7 @@ const SkillBadgeContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin: 20px 0;
+  margin: 10px 0 15px;
   flex-wrap: wrap;
 `;
 

@@ -76,8 +76,19 @@ const DetailIcon = styled.img`
 `;
 
 const DetailText = styled.div`
+  display: flex;
+  flex-direction: row;
   font-family: Pretendard;
   font-weight: 200;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+`;
+
+const DetailBoldText = styled.div`
+  font-family: Pretendard;
+  font-weight: 400;
+  margin: 0px 5px;
   font-size: 22px;
   color: #333;
   text-align: center;
@@ -98,7 +109,7 @@ function OthersSection() {
         <DetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={SchoolIcon} />
-            <DetailText>덕성여자대학교 성적우수 입학</DetailText>
+            <DetailText>덕성여자대학교 <DetailBoldText>성적우수</DetailBoldText> 입학</DetailText>
           </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
@@ -108,15 +119,15 @@ function OthersSection() {
         <DetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={RankingIcon} />
-            <DetailText>DS-데이터톤 우수상</DetailText>
+            <DetailText>DS-데이터톤 <DetailBoldText>우수상</DetailBoldText></DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={SchoolIcon} />
-            <DetailText>덕성여자대학교 컴퓨터공학과 차석</DetailText>
+            <DetailText>덕성여자대학교 컴퓨터공학과 <DetailBoldText>차석</DetailBoldText></DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={BookIcon} />
-            <DetailText>개발 동아리 "Corner" 2기 활동</DetailText>
+            <DetailText>개발 동아리 <DetailBoldText>"Corner"</DetailBoldText> 2기 활동</DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={BookIcon} />
@@ -130,19 +141,19 @@ function OthersSection() {
         <DetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={CodeIcon} />
-            <DetailText>ICT 이브와 (Gang Mate)</DetailText>
+            <DetailText><DetailBoldText>ICT 이브와</DetailBoldText> (Gang Mate)</DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={BookIcon} />
-            <DetailText>개발 동아리 "Corner" 3기 운영진 (기획 팀장)</DetailText>
+            <DetailText>개발 동아리 <DetailBoldText>"Corner"</DetailBoldText> 3기 운영진 (기획 팀장)</DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={BookIcon} />
-            <DetailText>"Swift Coding Club" 2023 1분기 활동</DetailText>
+            <DetailText><DetailBoldText>"Swift Coding Club"</DetailBoldText> 2023 1분기 활동</DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={SchoolIcon} />
-            <DetailText>교직이수, 교육봉사 70시간</DetailText>
+            <DetailText><DetailBoldText>교직이수</DetailBoldText>, 교육봉사 70시간</DetailText>
           </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
