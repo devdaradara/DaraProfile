@@ -53,14 +53,19 @@ const ProjectContainer = styled.div`
   margin: 20px auto;
 `;
 
+const ProjectCardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+`;
+
 const ArrowButton = styled.button`
   cursor: pointer;
   background: transparent;
   border: none;
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
   z-index: 10;
+  position: absolute;
 `;
 
 const LeftArrow = styled(ArrowButton)`
@@ -78,28 +83,34 @@ const ArrowImg = styled.img`
 `;
 
 function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
-  const [selectedProjectDetail, setSelectedProjectDetail] = useState<ProjectDetailType | null>(null);
-  
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
+    null
+  );
+  const [selectedProjectDetail, setSelectedProjectDetail] =
+    useState<ProjectDetailType | null>(null);
+
   const [startIndex, setStartIndex] = useState(0);
   const [isHoveringLeft, setIsHoveringLeft] = useState(false);
   const [isHoveringRight, setIsHoveringRight] = useState(false);
 
-
   const nextProjects = () => {
-    setStartIndex(prevIndex => (prevIndex + 1) % ProjectData.length);
+    setStartIndex((prevIndex) => (prevIndex + 1) % ProjectData.length);
   };
 
   const prevProjects = () => {
-    setStartIndex(prevIndex => (prevIndex - 1 + ProjectData.length) % ProjectData.length);
+    setStartIndex(
+      (prevIndex) => (prevIndex - 1 + ProjectData.length) % ProjectData.length
+    );
   };
 
   const onProjectClick = (project: ProjectType) => {
     setSelectedProject(project);
-    const projectDetail = ProjectDetailData.find(detail => detail.id === project.id);
+    const projectDetail = ProjectDetailData.find(
+      (detail) => detail.id === project.id
+    );
     setSelectedProjectDetail(projectDetail || null);
   };
-  
+
   const displayedProjects = [];
   for (let i = 0; i < 3; i++) {
     displayedProjects.push(ProjectData[(startIndex + i) % ProjectData.length]);
@@ -113,38 +124,42 @@ function ProjectsSection() {
           <TitleText>Projects</TitleText>
         </TitleContainer>
       </Link>
-      <LeftArrow
-        onClick={prevProjects}
-        onMouseEnter={() => setIsHoveringLeft(true)}
-        onMouseLeave={() => setIsHoveringLeft(false)}
-      >
-        <ArrowImg
-          src={isHoveringLeft ? LeftFillArrowIcon : LeftArrowIcon}
-          alt="Previous"
-          style={{ opacity: 1 }}
-        />
-      </LeftArrow>
-      <ProjectContainer>
-        {displayedProjects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            onClick={() => onProjectClick(project)}
+      <ProjectCardContainer>
+        <LeftArrow
+          onClick={prevProjects}
+          onMouseEnter={() => setIsHoveringLeft(true)}
+          onMouseLeave={() => setIsHoveringLeft(false)}
+        >
+          <ArrowImg
+            src={isHoveringLeft ? LeftFillArrowIcon : LeftArrowIcon}
+            alt="Previous"
+            style={{ opacity: 1 }}
           />
-        ))}
-      </ProjectContainer>
-      <RightArrow
-        onClick={nextProjects}
-        onMouseEnter={() => setIsHoveringRight(true)}
-        onMouseLeave={() => setIsHoveringRight(false)}
-      >
-        <ArrowImg
-          src={isHoveringRight ? RightFillArrowIcon : RightArrowIcon}
-          alt="Next"
-          style={{ opacity: 1 }}
-        />
-      </RightArrow>
-      {selectedProjectDetail && <ProjectDetail detail={selectedProjectDetail} />}
+        </LeftArrow>
+        <ProjectContainer>
+          {displayedProjects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              onClick={() => onProjectClick(project)}
+            />
+          ))}
+        </ProjectContainer>
+        <RightArrow
+          onClick={nextProjects}
+          onMouseEnter={() => setIsHoveringRight(true)}
+          onMouseLeave={() => setIsHoveringRight(false)}
+        >
+          <ArrowImg
+            src={isHoveringRight ? RightFillArrowIcon : RightArrowIcon}
+            alt="Next"
+            style={{ opacity: 1 }}
+          />
+        </RightArrow>
+      </ProjectCardContainer>
+      {selectedProjectDetail && (
+        <ProjectDetail detail={selectedProjectDetail} />
+      )}
     </Section>
   );
 }

@@ -11,10 +11,10 @@ const DetailSection = styled.div`
   flex-direction: column;
   width: 80%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: white;
+  background-color: #F5F5F5;
 `;
 
 const MidColumn = styled.div`
@@ -72,14 +72,17 @@ const ImageSliderContainer = styled.div`
 
 const Image = styled.img`
   width: auto;
-  max-width: 100%;
+  max-width: 80%;
   max-height: 400px;
-  object-fit: contain;
+  /* object-fit: */
+  /* ovbject-fit: contain; */
+  object-fit: cover;
+  margin-bottom: 20px;
 `;
 
 const SliderArrow = styled.button`
   cursor: pointer;
-  background-color: #fff;
+  background-color: #F5F5F5;
   border: none;
   padding: 10px;
   border-radius: 50%;
@@ -105,7 +108,7 @@ const ImageCounter = styled.div`
   transform: translateX(-50%);
   font-size: 16px;
   color: #333;
-  background-color: #fff;
+  background-color: #F5F5F5;
   padding: 5px;
   border-radius: 12px;
 `;

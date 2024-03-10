@@ -17,7 +17,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ffffff;
+  background: #F5F5F5;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -25,31 +25,23 @@ const Card = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
+  width: 230px;
   height: 200px;
   object-fit: contain;
 `;
 
-const Title = styled.h3`
+const Title = styled.div`
   margin-top: 20px; 
-  padding: 0 20px;
+  margin-bottom: 10px;
   text-align: center;
-  font-family: 'Pretendard'
+  font-family: 'Pretendard';
   font-weight: 600;
-  font-size: 24px;
-  white-space: pre-wrap;
-  overflow: hidden;
-  text-align: center;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 22px;
+  padding: 10px 0;
 `;
 
-const Description = styled.p`
-  margin-top: 10px;
-  padding: 0px 30px;
+const Description = styled.div`
+  margin-top: 20px;
   text-align: center;
   font-family: 'Pretendard'
   font-weight: 200;
@@ -63,14 +55,12 @@ const Description = styled.p`
 `;
 
 const TechStack = styled.p`
-  padding: 0 20px 20px;
+  padding: 10px 20px 20px;
   text-align: center;
   font-family: 'Pretendard'
   font-weight: 400;
   font-size: 14px;
   border-top: 1px solid #ddd;
-  padding-top: 10px;
-  margin-top: 20px;
 `;
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
