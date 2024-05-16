@@ -21,25 +21,25 @@ export const ProjectData = [
     image: 'images/StarHub/StarHub1.png',
     techStack: 'React, Sprig-Boot',
   },
-  // {
-  //   id: 'project4',
-  //   title: 'WhereWheel',
-  //   description: '전동 휠체어 급속 충전기 위치\n공유 사이트입니다.',
-  //   image: 'image_url_here',
-  //   techStack: 'React',
-  // },
   {
-    id: 'project5',
+    id: 'project4',
     title: 'Buddy Friends',
     description: '반려 동물 돌봄 품앗이\n웹 사이트입니다.',
     image: 'images/BuddyFriends/BuddyFriends.png',
     techStack: 'React, Spring-Boot',
   },
   {
-    id: 'project6',
+    id: 'project5',
     title: 'Dara Profile',
     description: '개인 포트폴리오 정리 \n웹 사이트입니다.',
     image: 'images/DaraProfile/DaraProfile1.png',
     techStack: 'React, Spring-Boot',
-  }
+  },
+  {
+    id: 'project6',
+    title: 'WhereWheel',
+    description: '전동 휠체어 급속 충전기 위치\n공유 사이트입니다.',
+    image: 'image_url_here',
+    techStack: 'React',
+  },
 ];
