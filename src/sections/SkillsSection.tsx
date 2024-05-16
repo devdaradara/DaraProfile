@@ -239,6 +239,13 @@ function SkillsSection() {
           <SkillTitle>App</SkillTitle>
           <SkillBadgeContainer>
             <SkillBadge style={{ padding: "3px" }}>
+              <SkillBadgeImg src={ReactIcon} alt="React" />
+              <SkillOverlay>
+                <SkillOverlayTitle>React Native</SkillOverlayTitle>
+                <SkillOverlayText>90%</SkillOverlayText>
+              </SkillOverlay>
+            </SkillBadge>
+            <SkillBadge style={{ padding: "3px" }}>
               <SkillBadgeImg src={SwiftIcon} alt="Swift" />
               <SkillOverlay>
                 <SkillOverlayTitle>Swift</SkillOverlayTitle>
