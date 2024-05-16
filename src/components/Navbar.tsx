@@ -137,6 +137,12 @@ function Navbar() {
 
       <NavItems>
         <NavItem hoverColor="#FFB600">
+          <Link to="intorduce" smooth={true} duration={500}>
+            Home
+          </Link>
+        </NavItem>
+
+        <NavItem hoverColor="#FFB600">
           <Link to="profile" smooth={true} duration={500}>
             Aboout
           </Link>

@@ -36,9 +36,9 @@ export const ProjectData = [
   },
   {
     id: "project6",
-    title: "WhereWheel",
-    description: "전동 휠체어 급속 충전기 위치\n공유 사이트입니다.",
+    title: "StoryTeller",
+    description: "AI를 활용해 어린이를 위한 \n영어 동화를 생성하는 앱입니다.",
     image: "images/StoryTeller/StoryTeller1.png",
-    techStack: "React",
+    techStack: "React, Spring-Boot",
   },
 ];

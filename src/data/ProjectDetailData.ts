@@ -16,8 +16,12 @@ export const ProjectDetailData = [
     ],
     githubLink: "https://github.com/Corner-1th-Hackathon",
     productionPeriod: "2023.01.20 ~ 2023.01.28",
-    usedTechnologies: ["다음 지도 사용", "일자별 사진 정리", "반응형 웹"],
     techStack: ["React"],
+    usedTechnologies: [
+      "다음 지도 API를 활용한 지역별 갤러리 기능",
+      "사진첩 추가 기능",
+      "반응형 웹 개발",
+    ],
   },
   {
     id: "project2",
@@ -37,23 +41,33 @@ export const ProjectDetailData = [
     ],
     githubLink: "https://github.com/DS-laver",
     productionPeriod: "2023.02.17 ~ 2023.09.12",
-    usedTechnologies: ["Vue", "Express", "MySQL"],
     techStack: ["React-Native"],
+    usedTechnologies: [
+      "유튜브 크롤링 기능을 활용한 영상 제공",
+      "캘린더 기능을 활용한 건강 관리",
+      "알람 기능을 활용한 건강 관리",
+    ],
   },
   {
     id: "project3",
     title: "StarHub",
     oneLine: "지도를 이용한 스터디 및 프로젝트 구인 사이트입니다.",
     description: "지도를 이용한 스터디 및 프로젝트 구인 사이트입니다.",
-    images: ["images/StarHub/StarHub1.png",
+    images: [
+      "images/StarHub/StarHub1.png",
       "images/StarHub/StarHub2.png",
       "images/StarHub/StarHub3.png",
       "images/StarHub/StarHub4.png",
-      "images/StarHub/StarHub5.png",],
+      "images/StarHub/StarHub5.png",
+    ],
     githubLink: "https://github.com/jinakayoo",
     productionPeriod: "2023.09.20 ~ 2023.12.27",
-    usedTechnologies: ["Angular", "Django", "PostgreSQL"],
     techStack: ["React", "Spring-Boot"],
+    usedTechnologies: [
+      "카카오 지도를 활용한 지도 기능",
+      "스터디 및 프로젝트 구인 기능",
+      "사용자 위치 기반 스터디 및 프로젝트 검색 기능",
+    ],
   },
   {
     id: "project4",
@@ -72,8 +86,12 @@ export const ProjectDetailData = [
     ],
     githubLink: "https://github.com/BuddyFriends",
     productionPeriod: "2024.01.27 ~ 2024.02.06",
-    usedTechnologies: ["Flutter", "Node.js", "SQLite"],
     techStack: ["React", "Spring-Boot", "AWS S3"],
+    usedTechnologies: [
+      "사용자 위치 기반 주소 설정",
+      "게시글 작성 및 필터링, 검색 기능",
+      "사용자별 거래 상태 관리 기능",
+    ],
   },
   {
     id: "project5",
@@ -91,8 +109,12 @@ export const ProjectDetailData = [
     ],
     githubLink: "https://github.com/devdaradara/DaraProfile/",
     productionPeriod: "2024.03.07 ~ 2024.03.12",
-    usedTechnologies: ["Flutter", "Node.js", "SQLite"],
     techStack: ["React"],
+    usedTechnologies: [
+      "프로젝트 상세 페이지 및 이미지 슬라이드 기능",
+      "리액트 프로젝트 배포",
+      "반응형 웹 개발",
+    ],
   },
   {
     id: "project6",
@@ -110,7 +132,11 @@ export const ProjectDetailData = [
     ],
     githubLink: "https://github.com/DS-StoryTeller/back-end",
     productionPeriod: "2024.03.01 ~",
-    usedTechnologies: ["React", "SpringBoot"],
-    techStack: ["React", "SpringBoot"],
+    techStack: ["React-Native", "SpringBoot"],
+    usedTechnologies: [
+      "OpenAI API를 활용한 동화 생성",
+      "태블릿 화면에 최적화된 UI/UX",
+      "SST/TTS 기능을 활용한 동화 제공",
+    ],
   },
 ];

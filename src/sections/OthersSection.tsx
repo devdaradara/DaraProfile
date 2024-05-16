@@ -9,14 +9,14 @@ import BookIcon from "../assets/icons/book.webp";
 import SchoolIcon from "../assets/icons/school.webp";
 
 const Section = styled.div`
-  height: 100vh;
+  min-height: 90vh;
   padding-top: 85px;
   padding-bottom: 20px;
   margin-top: -100px;
   background-color: #f5f5f5;
 
   @media (max-width: 1200px) {
-    height: auto;
+    min-height: auto;
     padding-top: 60px;
     padding-bottom: 15px;
     margin-top: -80px;
@@ -141,7 +141,7 @@ const OtherDetailContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 8px 0px;
+  margin: 12px 0px;
 `;
 
 const DetailIcon = styled.img`
@@ -265,7 +265,7 @@ function OthersSection() {
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={SchoolIcon} />
-            <DetailText><DetailBoldText>교직이수</DetailBoldText>, 교육봉사 70시간</DetailText>
+            <DetailText><DetailBoldText>정보과정 교직이수</DetailBoldText>및 교육봉사 70시간</DetailText>
           </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
@@ -275,7 +275,12 @@ function OthersSection() {
         <DetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={CodeIcon} />
-            <DetailText>ICT 한이음</DetailText>
+            <DetailText><DetailBoldText>ICT 한이음</DetailBoldText> (Story Teller)</DetailText>
+          </OtherDetailContainer>
+          <OtherDetailContainer>
+            <DetailIcon src={CodeIcon} />
+            <DetailBoldText>2024 예비창업패키지</DetailBoldText>
+            <DetailText>"학종일기" 창업 및 개발</DetailText>
           </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>

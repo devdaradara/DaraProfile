@@ -199,18 +199,30 @@ const DetailTextContainer = styled.div`
   }
 `;
 
+const DetailTextRowContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  @media (max-width: 900px) {
+    padding: 0 10px;
+  }
+`;
+
 const DetailTitleText = styled.div`
-  font-size: 24px;
+  font-size: 20px;
   font-family: Pretendard;
   font-weight: 400;
   margin-bottom: 10px;
+  margin-right: 10px;
 
   @media (max-width: 900px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media (max-width: 600px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 
@@ -219,6 +231,21 @@ const DetailContentText = styled.div`
   font-family: Pretendard;
   font-weight: 200;
   margin-bottom: 10px;
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+`;
+
+const BulletPoint = styled.li`
+  font-size: 20px;
+  font-family: Pretendard;
+  font-weight: 200;
+  margin-bottom: 5px;
 
   @media (max-width: 900px) {
     font-size: 18px;
@@ -267,19 +294,24 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ detail }) => {
           <DetailTextContainer>
             <DetailContentText>{detail.description}</DetailContentText>
           </DetailTextContainer>
-          <DetailTextContainer>
+
+          <DetailTextRowContainer>
             <DetailTitleText>제작 기간</DetailTitleText>
             <DetailContentText>{detail.productionPeriod}</DetailContentText>
-          </DetailTextContainer>
-          <DetailTextContainer>
-            <DetailTitleText>사용 기술</DetailTitleText>
-            <DetailContentText>
-              {detail.usedTechnologies.join(", ")}
-            </DetailContentText>
-          </DetailTextContainer>
-          <DetailTextContainer>
+          </DetailTextRowContainer>
+
+          <DetailTextRowContainer>
             <DetailTitleText>기술 스택</DetailTitleText>
             <DetailContentText>{detail.techStack.join(", ")}</DetailContentText>
+          </DetailTextRowContainer>
+
+          <DetailTextContainer style={{ paddingBottom: "10px" }}>
+            <DetailTitleText>사용된 기술 및 주요 기능</DetailTitleText>
+            <ul style={{ margin: "10px", paddingLeft: "20px" }}>
+              {detail.usedTechnologies.map((tech, index) => (
+                <BulletPoint key={index}>{tech}</BulletPoint>
+              ))}
+            </ul>
           </DetailTextContainer>
         </RightColumn>
       </AnotherColumn>
