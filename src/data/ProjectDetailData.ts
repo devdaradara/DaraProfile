@@ -107,7 +107,6 @@ export const ProjectDetailData = [
       "images/StoryTeller/StoryTeller5.png",
       "images/StoryTeller/StoryTeller6.png",
       "images/StoryTeller/StoryTeller7.png",
-      "images/StoryTeller/StoryTeller8.png",
     ],
     githubLink: "https://github.com/DS-StoryTeller/back-end",
     productionPeriod: "2024.03.01 ~",
