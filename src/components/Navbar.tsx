@@ -104,12 +104,6 @@ function Navbar() {
             Others
           </Link>
         </NavItem>
-
-        {/* <NavItem hoverColor="#9D0208">
-          <Link to="board" smooth={true} duration={500}>
-            Board
-          </Link>
-        </NavItem> */}
       </NavItems>
     </NavbarContainer>
   );
