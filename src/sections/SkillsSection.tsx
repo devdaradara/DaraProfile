@@ -33,6 +33,21 @@ const Section = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  @media (max-width: 1200px) {
+    padding-top: 70px;
+    margin-top: -80px;
+  }
+
+  @media (max-width: 900px) {
+    padding-top: 50px;
+    margin-top: -60px;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 30px;
+    margin-top: -40px;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -40,11 +55,21 @@ const TitleContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const TitleLink = styled.img`
   height: 50px;
   margin-right: 20px;
+
+  @media (max-width: 600px) {
+    height: 40px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 `;
 
 const TitleText = styled.div`
@@ -52,12 +77,28 @@ const TitleText = styled.div`
   padding: 12px 0px;
   font-family: Pretendard;
   font-weight: 900;
+
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
 `;
 
 const AllSkillContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+
+  @media (max-width: 600px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const SkillContainer = styled.div`
@@ -65,6 +106,10 @@ const SkillContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const SkillTitle = styled.div`
@@ -72,6 +117,18 @@ const SkillTitle = styled.div`
   font-size: 34px;
   font-family: Pretendard;
   font-weight: 600;
+
+  @media (max-width: 1200px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 22px;
+  }
 `;
 
 const SkillBadgeContainer = styled.div`
@@ -89,6 +146,21 @@ const SkillBadgeImg = styled.img`
   object-fit: cover;
   object-position: center;
   border-radius: 23px;
+
+  @media (max-width: 1200px) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media (max-width: 900px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (max-width: 600px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 const SkillBadge = styled.div`
@@ -101,6 +173,21 @@ const SkillBadge = styled.div`
   margin: 0px 10px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+
+  @media (max-width: 1200px) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media (max-width: 900px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (max-width: 600px) {
+    width: 50px;
+    height: 50px;
+  }
 
   &:hover {
     box-shadow: 0px 0px 15px 5px #666666;
@@ -125,6 +212,18 @@ const SkillOverlay = styled.div`
   justify-content: center;
   transition: top 0.3s ease;
   border-radius: 23px;
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
 `;
 
 const SkillOverlayTitle = styled.div`
@@ -133,6 +232,18 @@ const SkillOverlayTitle = styled.div`
   font-weight: 600;
   text-align: center; 
   margin-bottom: 5px;
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
 `;
 
 const SkillOverlayText = styled.div`
@@ -140,7 +251,20 @@ const SkillOverlayText = styled.div`
   font-family: Pretendard;
   font-weight: 400;
   text-align: center; 
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
 `;
+
 
 function SkillsSection() {
   return (

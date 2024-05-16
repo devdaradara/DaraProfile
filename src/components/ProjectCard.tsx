@@ -7,7 +7,6 @@ interface ProjectCardProps {
   project: ProjectType;
   onClick: () => void;
 }
-
 const Card = styled.div`
   width: 300px;
   height: auto;
@@ -18,6 +17,17 @@ const Card = styled.div`
   flex-direction: column;
   align-items: center;
   background: #F5F5F5;
+
+  @media (max-width: 900px) {
+    width: 250px;
+    margin: 15px;
+  }
+
+  @media (max-width: 600px) {
+    width: 200px;
+    margin: 10px;
+  }
+
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -28,6 +38,16 @@ const Image = styled.img`
   width: 230px;
   height: 200px;
   object-fit: contain;
+
+  @media (max-width: 900px) {
+    width: 200px;
+    height: 180px;
+  }
+
+  @media (max-width: 600px) {
+    width: 180px;
+    height: 160px;
+  }
 `;
 
 const Title = styled.div`
@@ -38,12 +58,20 @@ const Title = styled.div`
   font-weight: 600;
   font-size: 22px;
   padding: 10px 0;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
 `;
 
 const Description = styled.div`
   margin-top: 20px;
   text-align: center;
-  font-family: 'Pretendard'
+  font-family: 'Pretendard';
   font-weight: 200;
   font-size: 16px;
   line-height: 1.5;
@@ -52,16 +80,33 @@ const Description = styled.div`
   white-space: pre-wrap;
   overflow: hidden;
   text-align: center;
+
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
 
 const TechStack = styled.p`
   padding: 10px 20px 20px;
   text-align: center;
-  font-family: 'Pretendard'
+  font-family: 'Pretendard';
   font-weight: 400;
   font-size: 14px;
   border-top: 1px solid #ddd;
+
+  @media (max-width: 900px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
 `;
+
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   project,

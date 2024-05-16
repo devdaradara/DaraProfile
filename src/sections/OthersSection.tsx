@@ -14,6 +14,25 @@ const Section = styled.div`
   padding-bottom: 20px;
   margin-top: -100px;
   background-color: #f5f5f5;
+
+  @media (max-width: 1200px) {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    margin-top: -80px;
+  }
+
+  @media (max-width: 900px) {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-top: -60px;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-top: -40px;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -22,11 +41,22 @@ const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 `;
 
 const TitleLink = styled.img`
   height: 50px;
   margin-right: 20px;
+
+  @media (max-width: 600px) {
+    height: 40px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 `;
 
 const TitleText = styled.div`
@@ -34,6 +64,18 @@ const TitleText = styled.div`
   padding: 12px 0px;
   font-family: Pretendard;
   font-weight: 900;
+
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
 `;
 
 const YearContainer = styled.div`
@@ -41,6 +83,12 @@ const YearContainer = styled.div`
   justify-content: center;
   margin-bottom: 20px;
   margin-left: 70px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
 `;
 
 const YearText = styled.div`
@@ -49,6 +97,19 @@ const YearText = styled.div`
   font-size: 28px;
   color: #333;
   margin: 12px 30px 20px 0px;
+
+  @media (max-width: 1200px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+    margin: 8px 0;
+  }
 `;
 
 const DetailContainer = styled.div`
@@ -59,8 +120,21 @@ const DetailContainer = styled.div`
   padding-left: 30px;
   border-left: 2px solid #333;
   margin-bottom: 10px;
-`;
 
+  @media (max-width: 1200px) {
+    width: 450px;
+  }
+
+  @media (max-width: 900px) {
+    width: 400px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: 600px) {
+    width: 90%;
+    padding-left: 15px;
+  }
+`;
 
 const OtherDetailContainer = styled.div`
   display: flex;
@@ -73,6 +147,20 @@ const OtherDetailContainer = styled.div`
 const DetailIcon = styled.img`
   height: 26px;
   margin-right: 20px;
+
+  @media (max-width: 1200px) {
+    height: 24px;
+  }
+
+  @media (max-width: 900px) {
+    height: 22px;
+    margin-right: 15px;
+  }
+
+  @media (max-width: 600px) {
+    height: 20px;
+    margin-right: 10px;
+  }
 `;
 
 const DetailText = styled.div`
@@ -83,6 +171,18 @@ const DetailText = styled.div`
   font-size: 22px;
   color: #333;
   text-align: center;
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 
 const DetailBoldText = styled.div`
@@ -92,6 +192,18 @@ const DetailBoldText = styled.div`
   font-size: 22px;
   color: #333;
   text-align: center;
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 
 function OthersSection() {

@@ -17,6 +17,24 @@ const Section = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5;
+
+  @media (max-width: 1200px) {
+    padding-top: 60px;
+    margin-top: -80px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 900px) {
+    padding-top: 40px;
+    margin-top: -60px;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 20px;
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
 `;
 
 const TitleContext = styled.div`
@@ -31,6 +49,10 @@ const TitleContext = styled.div`
     height: 4px;
     background-color: #ff4500;
     margin: 10px auto 0;
+
+    @media (max-width: 600px) {
+      width: 60%;
+    }
   }
 `;
 
@@ -40,12 +62,36 @@ const TitleText = styled.div`
   font-family: Pretendard;
   font-weight: 600;
   color: #333;
+
+  @media (max-width: 1200px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 22px;
+  }
 `;
 
 const TitleNameText = styled.div`
   font-size: 38px;
   font-family: Pretendard;
   font-weight: 900;
+
+  @media (max-width: 1200px) {
+    font-size: 34px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 26px;
+  }
 `;
 
 const DescriptionContainer = styled.div`
@@ -55,10 +101,27 @@ const DescriptionContainer = styled.div`
   color: #333;
   max-width: 60%;
   text-align: center;
+
+  @media (max-width: 1200px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+    max-width: 80%;
+  }
 `;
 
 const DescriptionText = styled.div`
   margin-top: 10px;
+
+  @media (max-width: 600px) {
+    margin-top: 8px;
+  }
 `;
 
 const MoreButton = styled.img`
@@ -71,6 +134,11 @@ const MoreButton = styled.img`
   &:hover {
     opacity: 0.8;
   }
+
+  @media (max-width: 600px) {
+    width: 30px;
+    height: 30px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -79,12 +147,22 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+
+  @media (max-width: 600px) {
+    margin-top: 15px;
+  }
 `;
 
 const ImageDiv = styled.img`
   width: 40px;
   height: 40px;
   padding: 5px;
+
+  @media (max-width: 600px) {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+  }
 `;
 
 function IntroduceSection() {

@@ -15,6 +15,27 @@ const Section = styled.div`
   padding-top: 85px;
   margin-top: -100px;
   margin-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    padding-top: 70px;
+    margin-top: -80px;
+    margin-bottom: 150px;
+  }
+
+  @media (max-width: 900px) {
+    padding-top: 50px;
+    margin-top: -60px;
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 30px;
+    margin-top: -40px;
+    margin-bottom: 90px;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -23,11 +44,22 @@ const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 `;
 
 const TitleLink = styled.img`
   height: 50px;
   margin-right: 20px;
+
+  @media (max-width: 600px) {
+    height: 40px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 `;
 
 const TitleText = styled.div`
@@ -35,40 +67,84 @@ const TitleText = styled.div`
   padding: 12px 0px;
   font-family: Pretendard;
   font-weight: 900;
+
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
 `;
 
-const ProfileContainer = styled.div`
+const ContentContainer = styled.div`
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+`;
+
+const BusinessCardContainer = styled.div`
+  margin-right: 50px;
+  @media (max-width: 900px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 `;
 
 const ProfileDescriptionContainer = styled.div`
-  width: 100%
-  margin-left: 50px;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  max-width: 500px;
 `;
 
 const ProfileDescription = styled.div`
+  display: flex;
+  align-items: center;
   font-family: Pretendard;
   font-weight: 400;
   font-size: 22px;
   color: #333;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  margin: 15px 0px 20px 20px;
+  text-align: left;
+  margin-bottom: 20px;
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 
 const ProfileIcon = styled.img`
   width: 24px;
   height: 24px;
   margin-right: 10px;
+
+  @media (max-width: 1200px) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (max-width: 900px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 600px) {
+    width: 18px;
+    height: 18px;
+  }
 `;
 
 function ProfileSection() {
@@ -110,24 +186,24 @@ function ProfileSection() {
         </TitleContainer>
       </Link>
 
-      <ProfileContainer>
-        <BusinessCard
-          onMouseMove={onMouseMove}
-          onMouseOut={onMouseOut}
-          cardState={cardState}
-        />
+      <ContentContainer>
+        <BusinessCardContainer>
+          <BusinessCard
+            onMouseMove={onMouseMove}
+            onMouseOut={onMouseOut}
+            cardState={cardState}
+          />
+        </BusinessCardContainer>
 
         <ProfileDescriptionContainer>
           <ProfileDescription>
             <ProfileIcon src={UserIcon} alt="UserIcon" />
             류지예 (Ryu Jiye)
           </ProfileDescription>
-
           <ProfileDescription>
             <ProfileIcon src={CodeIcon} alt="CodeIcon" />
             React, Spring Boot, Swift
           </ProfileDescription>
-
           <ProfileDescription>
             <ProfileIcon src={RankingIcon} alt="RankingIcon" />
             <a
@@ -137,16 +213,12 @@ function ProfileSection() {
               solved.ac/jiyesung01
             </a>
           </ProfileDescription>
-        </ProfileDescriptionContainer>
-
-        <ProfileDescriptionContainer>
           <ProfileDescription>
             <ProfileIcon src={EmailIcon} alt="EmailIcon" />
             <a href="mailto:devdaradara@gmail.com" style={{ color: "#333" }}>
               devdaradara@gmail.com
             </a>
           </ProfileDescription>
-
           <ProfileDescription>
             <ProfileIcon src={GithubIcon} alt="GithubIcon" />
             <a
@@ -158,7 +230,6 @@ function ProfileSection() {
               github.com/devdaradara
             </a>
           </ProfileDescription>
-
           <ProfileDescription>
             <ProfileIcon src={TistoryIcon} alt="TistoryIcon" />
             <a
@@ -171,7 +242,7 @@ function ProfileSection() {
             </a>
           </ProfileDescription>
         </ProfileDescriptionContainer>
-      </ProfileContainer>
+      </ContentContainer>
     </Section>
   );
 }

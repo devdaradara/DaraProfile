@@ -15,6 +15,21 @@ const DetailSection = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background-color: #F5F5F5;
+
+  @media (max-width: 1200px) {
+    width: 90%;
+    padding: 25px 0px;
+  }
+
+  @media (max-width: 900px) {
+    width: 95%;
+    padding: 20px 0px;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 15px 0px;
+  }
 `;
 
 const MidColumn = styled.div`
@@ -22,13 +37,21 @@ const MidColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 900px) {
+    padding: 0 10px;
+  }
 `;
 
 const AnotherColumn = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  /* align-items: center; */
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const LeftColumn = styled.div`
@@ -37,6 +60,11 @@ const LeftColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    padding: 10px 0;
+  }
 `;
 
 const RightColumn = styled.div`
@@ -44,13 +72,27 @@ const RightColumn = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
-`;
 
+  @media (max-width: 900px) {
+    width: 100%;
+    padding: 10px 0;
+  }
+`;
 const Title = styled.div`
   font-size: 36px;
   font-family: Pretendard;
   font-weight: 900;
   margin-bottom: 20px;
+
+  @media (max-width: 900px) {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 `;
 
 const GitHubLink = styled.a`
@@ -60,6 +102,14 @@ const GitHubLink = styled.a`
   font-family: Pretendard;
   font-weight: 400;
   color: #333;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 
 const ImageSliderContainer = styled.div`
@@ -68,16 +118,29 @@ const ImageSliderContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 900px) {
+    padding: 0 10px;
+  }
 `;
+
 
 const Image = styled.img`
   width: auto;
   max-width: 80%;
   max-height: 400px;
-  /* object-fit: */
-  /* ovbject-fit: contain; */
   object-fit: cover;
   margin-bottom: 20px;
+
+  @media (max-width: 900px) {
+    max-width: 90%;
+    max-height: 300px;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+    max-height: 200px;
+  }
 `;
 
 const SliderArrow = styled.button`
@@ -91,6 +154,10 @@ const SliderArrow = styled.button`
   transform: translateY(-50%);
   user-select: none;
   z-index: 10;
+
+  @media (max-width: 600px) {
+    padding: 8px;
+  }
 `;
 
 const SliderArrowLeft = styled(SliderArrow)`
@@ -111,6 +178,14 @@ const ImageCounter = styled.div`
   background-color: #F5F5F5;
   padding: 5px;
   border-radius: 12px;
+
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
 
 const DetailTextContainer = styled.div`
@@ -118,6 +193,10 @@ const DetailTextContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
+
+  @media (max-width: 900px) {
+    padding: 0 10px;
+  }
 `;
 
 const DetailTitleText = styled.div`
@@ -125,6 +204,14 @@ const DetailTitleText = styled.div`
   font-family: Pretendard;
   font-weight: 400;
   margin-bottom: 10px;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
 `;
 
 const DetailContentText = styled.div`
@@ -132,6 +219,14 @@ const DetailContentText = styled.div`
   font-family: Pretendard;
   font-weight: 200;
   margin-bottom: 10px;
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 
 export const ProjectDetail: React.FC<ProjectDetailProps> = ({ detail }) => {

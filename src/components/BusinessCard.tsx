@@ -6,12 +6,35 @@ const BusinessCardStyle = styled.div`
   transition: transform 150ms;
   user-select: none;
   margin-right: 30px;
-`
+
+  @media (max-width: 900px) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 600px) {
+    margin-right: 10px;
+  }
+`;
 
 const ProfileImage = styled.img`
   width: 300px;
   height: 300px;
   border-radius: 50%;
+
+  @media (max-width: 1200px) {
+    width: 250px;
+    height: 250px;
+  }
+
+  @media (max-width: 900px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (max-width: 600px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 interface CardState {

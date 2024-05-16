@@ -17,6 +17,16 @@ const NavbarContainer = styled.div`
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0.5rem 0.5rem;
+  }
 `;
 
 const NameSection = styled.div`
@@ -24,12 +34,25 @@ const NameSection = styled.div`
   display: flex;
   align-items: center;
   margin-left: 3rem;
+
+  @media (max-width: 900px) {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const Logo = styled.img`
   height: 35px;
   margin-right: 10px;
   border-radius: 50%;
+
+  @media (max-width: 600px) {
+    height: 30px;
+  }
 `;
 
 const MyName = styled.div`
@@ -38,16 +61,28 @@ const MyName = styled.div`
   margin-bottom: 5px;
   font-family: Pretendard;
   font-weight: 600;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 
 const NavItems = styled.div`
   display: flex;
   margin-right: 3rem;
+
+  @media (max-width: 900px) {
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
 `;
 
 interface NavItemProps {
   hoverColor?: string;
 }
+
 
 const NavItem = styled.div<NavItemProps>`
   margin-left: 10px;
@@ -62,6 +97,26 @@ const NavItem = styled.div<NavItemProps>`
     color: ${(props) => props.hoverColor || "transparent"};
     font-size: 24px;
     padding: 3px 20px;
+  }
+
+  @media (max-width: 900px) {
+    margin-left: 0;
+    padding: 8px 0;
+
+    &:hover {
+      font-size: 20px;
+      padding: 5px 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+    padding: 6px 0;
+
+    &:hover {
+      font-size: 18px;
+      padding: 4px 8px;
+    }
   }
 `;
 
