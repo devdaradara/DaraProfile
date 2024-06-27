@@ -9,9 +9,8 @@ import BookIcon from "../assets/icons/book.webp";
 import SchoolIcon from "../assets/icons/school.webp";
 
 const Section = styled.div`
-  min-height: 90vh;
   padding-top: 85px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   margin-top: -100px;
   background-color: #f5f5f5;
 
@@ -264,6 +263,10 @@ function OthersSection() {
             <DetailText><DetailBoldText>"Swift Coding Club"</DetailBoldText> 2023 1분기 활동</DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
+            <DetailIcon src={CodeIcon} />
+            <DetailText><DetailBoldText>2023학년도 창업 동아리 "Corner"</DetailBoldText>활동</DetailText>
+          </OtherDetailContainer>
+          <OtherDetailContainer>
             <DetailIcon src={SchoolIcon} />
             <DetailText><DetailBoldText>정보과정 교직이수</DetailBoldText>및 교육봉사 70시간</DetailText>
           </OtherDetailContainer>
@@ -275,12 +278,16 @@ function OthersSection() {
         <DetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={CodeIcon} />
+            <DetailText><DetailBoldText>2024학년도 창업 동아리 "Corner"</DetailBoldText>활동</DetailText>
+          </OtherDetailContainer>
+          <OtherDetailContainer>
+            <DetailIcon src={CodeIcon} />
             <DetailText><DetailBoldText>ICT 한이음</DetailBoldText> (Story Teller)</DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={CodeIcon} />
             <DetailBoldText>2024 예비창업패키지</DetailBoldText>
-            <DetailText>"학종일기" 창업 및 개발</DetailText>
+            <DetailText>"러닝메이트" 창업 및 개발</DetailText>
           </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
