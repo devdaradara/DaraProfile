@@ -14,7 +14,7 @@ const DetailSection = styled.div`
   padding: 30px 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #F5F5F5;
+  background-color: #f9f9f9;
 
   @media (max-width: 1200px) {
     width: 90%;

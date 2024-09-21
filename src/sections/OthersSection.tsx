@@ -12,7 +12,7 @@ const Section = styled.div`
   padding-top: 85px;
   padding-bottom: 50px;
   margin-top: -100px;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
 
   @media (max-width: 1200px) {
     min-height: auto;
@@ -214,13 +214,15 @@ function OthersSection() {
           <TitleText>Others</TitleText>
         </TitleContainer>
       </Link>
-      
+
       <YearContainer>
         <YearText>2021</YearText>
         <DetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={SchoolIcon} />
-            <DetailText>덕성여자대학교 <DetailBoldText>성적우수</DetailBoldText> 입학</DetailText>
+            <DetailText>
+              덕성여자대학교 <DetailBoldText>성적우수</DetailBoldText> 입학
+            </DetailText>
           </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
@@ -230,15 +232,21 @@ function OthersSection() {
         <DetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={RankingIcon} />
-            <DetailText>DS-데이터톤 <DetailBoldText>우수상</DetailBoldText></DetailText>
+            <DetailText>
+              DS-데이터톤 <DetailBoldText>우수상</DetailBoldText>
+            </DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={SchoolIcon} />
-            <DetailText>덕성여자대학교 컴퓨터공학과 <DetailBoldText>차석</DetailBoldText></DetailText>
+            <DetailText>
+              덕성여자대학교 컴퓨터공학과 <DetailBoldText>차석</DetailBoldText>
+            </DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={BookIcon} />
-            <DetailText>개발 동아리 <DetailBoldText>"Corner"</DetailBoldText> 2기 활동</DetailText>
+            <DetailText>
+              개발 동아리 <DetailBoldText>"Corner"</DetailBoldText> 2기 활동
+            </DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={BookIcon} />
@@ -252,23 +260,37 @@ function OthersSection() {
         <DetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={CodeIcon} />
-            <DetailText><DetailBoldText>ICT 이브와</DetailBoldText> (Gang Mate)</DetailText>
+            <DetailText>
+              <DetailBoldText>ICT 이브와</DetailBoldText> (Gang Mate) 개발
+            </DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={BookIcon} />
-            <DetailText>개발 동아리 <DetailBoldText>"Corner"</DetailBoldText> 3기 운영진 (기획 팀장)</DetailText>
+            <DetailText>
+              개발 동아리 <DetailBoldText>"Corner"</DetailBoldText> 3기 운영진{" "}
+              <DetailBoldText>(기획 팀장)</DetailBoldText>
+            </DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={BookIcon} />
-            <DetailText><DetailBoldText>"Swift Coding Club"</DetailBoldText> 2023 1분기 활동</DetailText>
+            <DetailText>
+              <DetailBoldText>"Swift Coding Club"</DetailBoldText> 2023 1분기
+              활동
+            </DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={CodeIcon} />
-            <DetailText><DetailBoldText>2023학년도 창업 동아리 "Corner"</DetailBoldText>활동</DetailText>
+            <DetailText>
+              <DetailBoldText>2023학년도 창업 동아리 "Corner"</DetailBoldText>
+              활동
+            </DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={SchoolIcon} />
-            <DetailText><DetailBoldText>정보과정 교직이수</DetailBoldText>및 교육봉사 70시간</DetailText>
+            <DetailText>
+              <DetailBoldText>정보과정 교직이수</DetailBoldText>및 교육봉사
+              70시간
+            </DetailText>
           </OtherDetailContainer>
         </DetailContainer>
       </YearContainer>
@@ -278,11 +300,17 @@ function OthersSection() {
         <DetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={CodeIcon} />
-            <DetailText><DetailBoldText>2024학년도 창업 동아리 "Corner"</DetailBoldText>활동</DetailText>
+            <DetailText>
+              <DetailBoldText>2024학년도 창업 동아리 "Corner"</DetailBoldText>
+              활동
+            </DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={CodeIcon} />
-            <DetailText><DetailBoldText>ICT 한이음</DetailBoldText> (Story Teller)</DetailText>
+            <DetailText>
+              <DetailBoldText>ICT 한이음</DetailBoldText> (Story Teller){" "}
+              <DetailBoldText>입상 수상</DetailBoldText>
+            </DetailText>
           </OtherDetailContainer>
           <OtherDetailContainer>
             <DetailIcon src={CodeIcon} />

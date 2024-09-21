@@ -16,7 +16,7 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
 
   @media (max-width: 1200px) {
     padding-top: 60px;

@@ -27,7 +27,7 @@ import GitHubIcon from "../assets/icons/skills/github.webp";
 const Section = styled.div`
   padding-top: 85px;
   margin-top: -100px;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;

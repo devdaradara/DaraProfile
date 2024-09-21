@@ -16,7 +16,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F5F5F5;
+  background: #f9f9f9;
 
   @media (max-width: 900px) {
     width: 250px;
