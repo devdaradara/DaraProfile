@@ -39,6 +39,13 @@ export const ProjectData = [
     title: "StoryTeller",
     description: "AI를 활용해 어린이를 위한 \n영어 동화를 생성하는 앱입니다.",
     image: "images/StoryTeller/StoryTeller1.webp",
-    techStack: "React, Spring-Boot",
+    techStack: "React-Native, Spring-Boot",
+  },
+  {
+    id: "project7",
+    title: "HakjongMate App",
+    description: "학생들을 위한 학종 메이트\n앱입니다.",
+    image: "images/HakjongMateApp/HakjongMateApp.png",
+    techStack: "React-Native, Spring-Boot"
   },
 ];

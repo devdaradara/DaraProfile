@@ -139,4 +139,26 @@ export const ProjectDetailData = [
       "SST/TTS 기능을 활용한 동화 제공",
     ],
   },
+  {
+    id: "project7",
+    title: "HakjongMate App",
+    oneLine: "학생들을 위한 학종 메이트 앱입니다.",
+    description: "2024 예비 창업 패키지를 통해 창업하여 개발한 생활기록부 관리 앱입니다.",
+    images: [
+      "images/HakjongMateApp/HakjongMateApp1.webp",
+      "images/HakjongMateApp/HakjongMateApp2.webp",
+      "images/HakjongMateApp/HakjongMateApp3.webp",
+      "images/HakjongMateApp/HakjongMateApp4.webp",
+      "images/HakjongMateApp/HakjongMateApp5.webp",
+      "images/HakjongMateApp/HakjongMateApp6.webp",
+      "images/HakjongMateApp/HakjongMateApp7.webp",
+    ],
+    githubLink: "https://github.com/Hakjong-Mate",
+    productionPeriod: "2024.07.02 ~",
+    techStack: ["React-Native", "Spring-Boot"],
+    usedTechnologies: [
+      "자체 개발 AI를 활용한 세특 주제 생성 연결",
+      "데이터 캐싱을 통한 성능 최적화",
+    ],
+  }
 ];
