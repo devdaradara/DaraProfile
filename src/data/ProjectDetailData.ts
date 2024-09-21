@@ -224,5 +224,63 @@ export const ProjectDetailData = [
       "자체 개발 AI를 활용한 세특 주제 생성 연결",
       "데이터 캐싱을 통한 성능 최적화",
     ],
+  },
+
+  // {
+  //   id: "project11",
+  //   title: "HakjongMate Web",
+  //   description: "학생들을 위한 학종 메이트\n웹입니다.",
+  //   image: "images/HakjongMateWeb/HakjongMateWeb1.png",
+  //   techStack: "React, Spring-Boot"
+  // },
+  // {
+  //   id: "project12",
+  //   title: "HakjongMate Web ver2",
+  //   description: "학종 메이트의 변화된 브랜드 컨셉에 맞춰 \n 리브랜딩한 웹사이트입니다.",
+  //   image: "images/HakjongMateWebUp/HakjongMateWebUp.png",
+  //   techStack: "React, Spring-Boot"
+  // }
+  {
+    id: "project11",
+    title: "HakjongMate Web",
+    oneLine: "학생들을 위한 학종 메이트 웹입니다.",
+    description: "2024 예비 창업 패키지를 통해 창업하여 개발한 생활기록부 관리 웹입니다.",
+    images: [
+      "images/HakjongMateWeb/HakjongMateWeb1.webp",
+      "images/HakjongMateWeb/HakjongMateWeb2.webp",
+      "images/HakjongMateWeb/HakjongMateWeb3.webp",
+      "images/HakjongMateWeb/HakjongMateWeb4.webp",
+      "images/HakjongMateWeb/HakjongMateWeb5.webp",
+      "images/HakjongMateWeb/HakjongMateWeb6.webp",
+      "images/HakjongMateWeb/HakjongMateWeb7.webp",
+    ],
+    githubLink: "https://github.com/Hakjong-Mate-Web/front-end",
+    productionPeriod: "2024.06.27 ~ 2024.08.05",
+    techStack: ["React", "Spring-Boot"],
+    usedTechnologies: [
+      "emailJS를 활용한 이메일 전송 기능",
+      "이미지 최적화를 통한 성능 최적화",
+      "반응형 웹 개발",
+    ],
+  },
+  {
+    id: "project12",
+    title: "HakjongMate Web ver2",
+    oneLine: "학종 메이트의 변화된 브랜드 컨셉에 맞춰 리브랜딩한 웹사이트입니다.",
+    description: "2024 예비 창업 패키지를 통해 창업하여 개발한 생활기록부 관리 웹입니다.",
+    images: [
+      "images/HakjongMateWebUp/HakjongMateWebUp1.webp",
+      "images/HakjongMateWebUp/HakjongMateWebUp2.webp",
+      "images/HakjongMateWebUp/HakjongMateWebUp3.webp",
+      "images/HakjongMateWebUp/HakjongMateWebUp4.webp",
+      "images/HakjongMateWebUp/HakjongMateWebUp5.webp",
+      "images/HakjongMateWebUp/HakjongMateWebUp6.webp",
+    ],
+    githubLink: "https://github.com/Hakjong-Mate-Web/v2-front-end",
+    productionPeriod: "2024.09.11 ~",
+    techStack: ["React", "Spring-Boot"],
+    usedTechnologies: [
+      "성능 최적화 및 UI/UX 개선",
+    ],
   }
 ];

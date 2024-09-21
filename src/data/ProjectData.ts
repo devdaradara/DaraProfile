@@ -63,10 +63,24 @@ export const ProjectData = [
     techStack: "React-Native, Spring-Boot",
   },
   {
-    id: "project7",
+    id: "project10",
     title: "HakjongMate App",
     description: "학생들을 위한 학종 메이트\n앱입니다.",
     image: "images/HakjongMateApp/HakjongMateApp.png",
     techStack: "React-Native, Spring-Boot"
   },
+  {
+    id: "project11",
+    title: "HakjongMate Web",
+    description: "학생들을 위한 학종 메이트\n웹입니다.",
+    image: "images/HakjongMateWeb/HakjongMateWeb1.png",
+    techStack: "React, Spring-Boot"
+  },
+  {
+    id: "project12",
+    title: "HakjongMate Web ver2",
+    description: "학종 메이트의 변화된 브랜드 컨셉에 맞춰 \n 리브랜딩한 웹사이트입니다.",
+    image: "images/HakjongMateWebUp/HakjongMateWebUp.png",
+    techStack: "React, Spring-Boot"
+  }
 ];
