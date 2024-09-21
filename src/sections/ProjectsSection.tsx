@@ -188,12 +188,12 @@ function ProjectsSection() {
   const [isHoveringRight, setIsHoveringRight] = useState(false);
 
   const nextProjects = () => {
-    setStartIndex((prevIndex) => (prevIndex + 1) % ProjectData.length);
+    setStartIndex((prevIndex) => (prevIndex + 3) % ProjectData.length);
   };
 
   const prevProjects = () => {
     setStartIndex(
-      (prevIndex) => (prevIndex - 1 + ProjectData.length) % ProjectData.length
+      (prevIndex) => (prevIndex - 3 + ProjectData.length) % ProjectData.length
     );
   };
 
