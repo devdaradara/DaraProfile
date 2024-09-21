@@ -196,11 +196,11 @@ export const ProjectDetailData = [
     ],
     githubLink: "https://github.com/DS-StoryTeller/back-end",
     productionPeriod: "2024.03.01 ~",
-    techStack: ["React-Native", "SpringBoot"],
+    techStack: ["SpringBoot"],
     usedTechnologies: [
-      "OpenAI API를 활용한 동화 생성",
-      "태블릿 화면에 최적화된 UI/UX",
-      "SST/TTS 기능을 활용한 동화 제공",
+      "OpenAI API를 활용한 동화 및 퀴즈 생성",
+      "트랜젝션 관리 및 성능 최적화",
+      "AWS를 활용한 이미지 및 데이터 베이스 저장",
     ],
   },
   {
