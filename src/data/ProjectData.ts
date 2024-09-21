@@ -73,14 +73,14 @@ export const ProjectData = [
     id: "project11",
     title: "HakjongMate Web",
     description: "학생들을 위한 학종 메이트\n웹입니다.",
-    image: "images/HakjongMateWeb/HakjongMateWeb1.png",
+    image: "images/HakjongMateWeb/HakjongMateWeb1.webp",
     techStack: "React, Spring-Boot"
   },
   {
     id: "project12",
     title: "HakjongMate Web ver2",
     description: "학종 메이트의 변화된 브랜드 컨셉에 맞춰 \n 리브랜딩한 웹사이트입니다.",
-    image: "images/HakjongMateWebUp/HakjongMateWebUp.png",
+    image: "images/HakjongMateWebUp/HakjongMateWebUp.webp",
     techStack: "React, Spring-Boot"
   }
 ];
