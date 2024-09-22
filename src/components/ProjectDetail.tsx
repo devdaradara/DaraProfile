@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { ProjectDetailType } from "../types/projectTypes";
 
@@ -258,6 +258,10 @@ const BulletPoint = styled.li`
 
 export const ProjectDetail: React.FC<ProjectDetailProps> = ({ detail }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    setCurrentImageIndex(0);
+  }, [detail]);
 
   const handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) =>

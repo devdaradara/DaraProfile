@@ -187,13 +187,16 @@ function ProjectsSection() {
   const [isHoveringLeft, setIsHoveringLeft] = useState(false);
   const [isHoveringRight, setIsHoveringRight] = useState(false);
 
+  // ProjectData를 역순으로 설정
+  const reversedProjectData = [...ProjectData].reverse();
+
   const nextProjects = () => {
-    setStartIndex((prevIndex) => (prevIndex + 3) % ProjectData.length);
+    setStartIndex((prevIndex) => (prevIndex + 3) % reversedProjectData.length);
   };
 
   const prevProjects = () => {
     setStartIndex(
-      (prevIndex) => (prevIndex - 3 + ProjectData.length) % ProjectData.length
+      (prevIndex) => (prevIndex - 3 + reversedProjectData.length) % reversedProjectData.length
     );
   };
 
@@ -207,7 +210,9 @@ function ProjectsSection() {
 
   const displayedProjects = [];
   for (let i = 0; i < 3; i++) {
-    displayedProjects.push(ProjectData[(startIndex + i) % ProjectData.length]);
+    displayedProjects.push(
+      reversedProjectData[(startIndex + i) % reversedProjectData.length]
+    );
   }
 
   return (
